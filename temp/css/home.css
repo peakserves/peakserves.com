@@ -1,0 +1,70 @@
+@font-face {
+    font-family: 'GT Walsheim Pro';
+    src: local('GT Walsheim Pro Medium'), local('GT-Walsheim-Pro-Medium'),
+        url('../font/GTWalsheimPro-Medium.woff2') format('woff2'),
+        url('../font/GTWalsheimPro-Medium.woff') format('woff'),
+        url('../font/GTWalsheimPro-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GT Walsheim Pro';
+    src: local('GT Walsheim Pro Regular'), local('GT-Walsheim-Pro-Regular'),
+        url('../font/GTWalsheimProRegular.woff2') format('woff2'),
+        url('../font/GTWalsheimProRegular.woff') format('woff'),
+        url('../font/GTWalsheimProRegular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.loading {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 100vh !important;
+    width: 100%;
+    z-index: 9999999;
+    text-align: center;
+    height: 100vh;
+}
+
+.loadecell {
+    margin: auto !important;
+    position: relative;
+    top: 35vh
+}
+
+.logo {
+    width: 30vw !important;
+    margin: auto !important;
+    position: relative;
+}
+
+body {
+    background: linear-gradient(90deg, #000000 0.55%, #2B434E 59.34%, #48849E 102.23%);
+    color: white;
+    height: 100vh !important;
+}
+
+.font1 {
+    font-weight: 700;
+    font-size: 48px;
+}
+
+.font2 {
+    font-size: 24px;
+    font-weight: 400 !important;
+}
+
+@media (max-width: 480px) {
+
+    .logo {
+        width: 50vw !important;
+    }
+
+    .loadecell {
+        top: 40vh
+    }
+}
