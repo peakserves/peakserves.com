@@ -491,6 +491,9 @@ ul {
     .contFrm{
         padding-top: 5%;
     }
+    .brand{
+      width: 80% !important;
+    }
   }
   
   @media (max-width: 575px) {
