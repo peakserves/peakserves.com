@@ -25,7 +25,7 @@
     <img id="btn-back-to-top" src="./image/up.png" alt="">
 
     <div class="head">
-        <nav class="navbar navbar-edit fixed-top nav-transparent navbar-expand-lg navbar-dark" id="mynav">
+        <nav class="navbar navbar-edit fixed-top nav-colored navbar-expand-lg navbar-dark" id="mynav">
             <a href="./index.html" class="navbar-brand"><img src="./image/logo.png" class="brand" style="height: 4vh;" alt=""></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
                 aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
@@ -727,22 +727,6 @@
         
 
     </script>
-
-<script>
-    const myNav = document.getElementById('mynav');
-    const cont = document.getElementById('main-content').getBoundingClientRect().top
-    console.log(cont)
-    window.onscroll = function () { 
-        if (document.documentElement.scrollTop >= cont ) {
-            myNav.classList.add("nav-colored");
-            myNav.classList.remove("nav-transparent");
-        } 
-        else {
-            myNav.classList.add("nav-transparent");
-            myNav.classList.remove("nav-colored");
-        }
-    };
-</script>
 </body>
 
 </html>
