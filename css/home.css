@@ -54,6 +54,7 @@ body {
   background: linear-gradient(90deg, #000000 0.55%, #2B434E 59.34%, #48849E 102.23%);
 }
 
+
 .head a {
   color: white;
   text-decoration: none;
@@ -70,9 +71,17 @@ body {
 }
 
 nav {
-  background: transparent !important;
   padding: 2vh 8vw !important;
 }
+
+.nav-transparent{
+  background: transparent !important;
+}
+
+.nav-colored{
+  background: linear-gradient(90deg, #000000 0.55%, #2B434E 59.34%, #48849E 102.23%) !important;
+}
+
 
 a {
   color: white;
@@ -220,6 +229,13 @@ a {
 
 }
 
+.triangle-bg{
+  background-image: url(../image/triangle2.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: left center;
+}
+
 .portfolio-img {
   width: 100%;
   background-color: #D7E4EA;
@@ -232,6 +248,20 @@ a {
   border-radius: 50px;
   margin-right: auto;
 }
+
+.partner-div {
+  height: 100% !important;
+  padding: 15px 5px;
+  background-color: white;
+  border-radius: 50px;
+  
+}
+
+.height-full{
+  height: 100% !important;
+  display: inline;
+}
+
 
 .tool-img {
   margin-top: 30px;
@@ -517,6 +547,11 @@ form.contFrm {
     height: auto !important;
     display: inline !important;
   }
+
+  .triangle-bg{
+    background-size: 400%;
+    background-position: right center;
+}
 }
 
 @media (max-width: 575px) {
@@ -547,6 +582,8 @@ form.contFrm {
   .navbar-brand {
     width: 50% !important;
   }
+
+  
 }
 
 @media (max-width: 480px) {

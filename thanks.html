@@ -25,7 +25,7 @@
     <img id="btn-back-to-top" src="./image/up.png" alt="">
 
     <div class="head">
-        <nav class="navbar navbar-edit navbar-expand-lg navbar-dark">
+        <nav class="navbar navbar-edit fixed-top nav-transparent navbar-expand-lg navbar-dark" id="mynav">
             <a href="./index.html" class="navbar-brand"><img src="./image/logo.png" class="brand" style="height: 4vh;" alt=""></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
                 aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
@@ -50,7 +50,7 @@
 
             </div>
         </nav>
-        <div class="">
+        <div class="" style="padding-top: 5vh; padding-bottom: 5vh;">
             <div class="row align-items-center" style="max-width: 100vw;">
                 <div class="col-12 col-lg-6 col-md-6 blue-top">
                     <div class="font1">Streamlining Accounting Operations for CPA Firms and Businesses</h1>
@@ -59,9 +59,10 @@
                         help businesses and CPA firms achieve streamlined efficiency.</div>
                     <br>
                     <br>
-                    <a onclick="showcfa()"><button class="filled cfa-firm-button">For CPA Firm</button></a>
-                    <a onclick="showbussiness()"><button class="buss-button un-filled" style="margin-left: 0.5vw">For
-                            Business</button></a><br><br>
+                    <a onclick="showbussiness()"><button class="buss-button filled">For
+                        Businesses</button></a>
+                <a onclick="showcfa()"><button class="un-filled cfa-firm-button" style="margin-left: 0.5vw">For CPA
+                        Firms</button></a><br>
                 </div>
                 <div class="col-md-6 col-lg-6 col-12 fix text-right" style="padding-right: 0; padding-bottom: 10px;">
                     <img src="./image/Frame 22.png" class="home-img" alt="">
@@ -70,8 +71,8 @@
         </div>
     </div>
 
-    <div>
-        <div class="row align-items-center" style="color: black; padding: 5% 15%; max-width: 100%; margin: 0 !important;">
+    <div id="main-content">
+        <div class="row align-items-center" style="color: black; padding: 5% 10%; max-width: 100%; margin: 0 !important;">
             <div class="col-12 col-lg-6 col-md-6 text-left" style="padding-right: 10%;">
                 <div class="font1">Get ahead with PeakServes</div>
                 <div class="font2"> Your outsourcing partner for success. <br><br></div>
@@ -95,14 +96,37 @@
 
 
     <div id="services"></div>
-    <div class="bg-grey" style="max-width: 100%; padding: 5% 15%;">
+    <div class="bg-grey" style="max-width: 100%; padding: 5% 10%;">
         <div class="col-12 font1 text-center">
-            <a onclick="showcfa()"><button class="filled cfa-firm-button">For CPA Firm</button></a>
-            <a onclick="showbussiness()"><button class="buss-button un-filled" style="margin-left: 0.5vw">For
-                    Business</button></a><br>
+            <a onclick="showbussiness()"><button class="buss-button filled">For
+                Businesses</button></a>
+        <a onclick="showcfa()"><button class="un-filled cfa-firm-button" style="margin-left: 0.5vw">For CPA
+                Firms</button></a><br>
         </div>
 
-        <div class="cfa-firm">
+        <div class="cfa-firm" style="display: none;">
+            <div class="col-12 font1 text-center">Partner Eligibilty</div>
+            <div class="row align-items-center text-center">
+                <div class="col-6 col-lg-4 col-md-4 height-full">
+                    <div class="font5 row-2-port partner-div">Industry Consultants</div>
+                </div>
+                <div class="col-6 col-lg-4 col-md-4 height-full">
+                    <div class="font5 row-2-port partner-div">Book-keeping Firms</div>
+                </div>
+                <div class="col-6 col-lg-4 col-md-4 height-full">
+                    <div class="font5 row-2-port partner-div">Management Consultancy Firms</div>
+                </div>
+                <div class="col-6 col-lg-4 col-md-4 height-full">
+                    <div class="font5 row-2-port partner-div">Certified Public Accountants</div>
+                </div>
+                <div class="col-6 col-lg-4 col-md-4 height-full">
+                    <div class="font5 row-2-port partner-div">Certified Finance Firms</div>
+                </div>
+                <div class="col-6 col-lg-4 col-md-4 height-full">
+                    <div class="font5 row-2-port partner-div">Part time CFOs</div>
+                </div>
+            </div><br><br>
+
             <div class="col-12 font1 text-center">Our Models</div><br>
             <div class="row text-center">
                 <div class="col-12 col-lg-4 col-md-6  py-3 py-sm-0">
@@ -220,7 +244,7 @@
             </div>
         </div>
 
-        <div class="bussiness" style="display: none;">
+        <div class="bussiness" >
             <div class="col-12 font1 text-center">Our Services</div><br>
             <div class="row text-center">
                 
@@ -302,7 +326,7 @@
 
     </div>
 
-    <div style="max-width: 100%; padding: 5% 15%; color: black;">
+    <div class="triangle-bg" style="max-width: 100%; padding: 5% 10%; color: black;">
         <div class="col-12 font1 text-center">Our Pillars</div><br><br>
         <div class="row  text-center">
             <div class="col-lg-6 col-md-6 col-12 pillar-item">
@@ -364,7 +388,7 @@
     
     </div>
 
-    <div class="bg-grey" style="max-width: 100%; padding: 5% 15%;">
+    <div class="bg-grey" style="max-width: 100%; padding: 5% 10%;">
         <div class="col-12 font1 text-center">Our Portfolio</div>
         <div class="col-12 font2 text-center"> We have clients from various sectors</div><br>
         <div class="row  text-center text-center">
@@ -458,7 +482,7 @@
     <br>
     </div>
 
-    <div style="max-width: 100%; padding: 5% 15%; color: black;">
+    <div style="max-width: 100%; padding: 5% 10%; color: black;">
         <div class="col-12 font1 text-center">Tools We Use</div><br><br>
         <!-- <div class="col-12 font2 text-center"> We have clients from various sectors</div><br><br> -->
         <div class="row  text-center">
@@ -504,7 +528,7 @@
 
     </div>
 
-    <div class="bg-grey text-center" style="max-width: 100%; padding: 5% 15%; color: black;">
+    <div class="bg-grey text-center" style="max-width: 100%; padding: 5% 10%; color: black;">
         <div class="col-12 font1 text-center">Testimonials</div><br><br>
         <div style="width: 100%;" id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
@@ -700,8 +724,25 @@
             document.documentElement.scrollTop = 0;
         }
 
+        
 
     </script>
+
+<script>
+    const myNav = document.getElementById('mynav');
+    const cont = document.getElementById('main-content').getBoundingClientRect().top
+    console.log(cont)
+    window.onscroll = function () { 
+        if (document.documentElement.scrollTop >= cont ) {
+            myNav.classList.add("nav-colored");
+            myNav.classList.remove("nav-transparent");
+        } 
+        else {
+            myNav.classList.add("nav-transparent");
+            myNav.classList.remove("nav-colored");
+        }
+    };
+</script>
 </body>
 
 </html>

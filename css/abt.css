@@ -72,8 +72,21 @@ body {
 }
 
 nav {
-    background: transparent !important;
     padding: 2vh 8vw !important;
+}
+
+.nav-transparent{
+    background: transparent !important;
+}
+
+.nav-colored{
+    background: linear-gradient(90deg, #000000 0.55%, #2B434E 59.34%, #48849E 102.23%) !important;
+}
+
+.triangle-bg{
+    background-image: url(../image/triangle.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 a {
@@ -526,6 +539,10 @@ form.contFrm {
 
     .navbar-brand {
         width: 50% !important;
+    }
+    .triangle-bg{
+        background-size: 200%;
+        background-position: left center;
     }
 }
 
