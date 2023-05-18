@@ -264,10 +264,6 @@ a {
         right: -15px !important;
     }
 
-    .hide {
-        display: none;
-    }
-
 }
 
 ::-webkit-scrollbar {
