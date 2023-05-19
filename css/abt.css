@@ -488,6 +488,25 @@ form.contFrm {
     width: 40% !important;
 }
 
+@media (max-width: 1270px) {
+    .brand {
+        width: 40%;
+        height: auto !important;
+        display: inline !important;
+    }
+    .mar{
+        margin-right: 6vw !important;
+    }
+}
+
+
+@media (max-width: 1045px) {
+    .mar{
+        margin-right: 5vw !important;
+    }
+}
+
+
 @media (max-width: 767px) {
     .contact-detail span {
         width: auto;
