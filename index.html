@@ -60,8 +60,8 @@
                     <div class="font2 text-justify">Transform fresh IT graduates into job-ready professionals and access cutting-edge tech solutions for your business growth and digital transformation.</div>
                     <br>
                     <br>
-                    <a href="#for-companies"><button class="buss-button filled">For Companies</button></a>
-                    <a href="#for-candidates"><button class="un-filled" style="margin-left: 0.5vw">For Candidates</button></a>
+                    <a onclick="showCompanies()"><button class="buss-button filled">For Companies</button></a>
+                    <a onclick="showCandidates()"><button class="un-filled" style="margin-left: 0.5vw">For Candidates</button></a>
                     <br><br>
                 </div>
                 <div class="col-md-6 col-lg-6 col-12 fix text-right" style="padding-right: 0; padding-bottom: 10px;">
@@ -72,8 +72,15 @@
     </div>
 
     <div id="main-content">
+        <div class="bg-grey" style="max-width: 100%; padding: 2% 10%;">
+            <div class="col-12 font1 text-center">
+                <a onclick="showCompanies()"><button class="buss-button filled">For Companies</button></a>
+                <a onclick="showCandidates()"><button class="un-filled candidates-button" style="margin-left: 0.5vw">For Candidates</button></a><br>
+            </div>
+        </div>
+
         <!-- FOR COMPANIES SECTION -->
-        <div id="for-companies" class="row align-items-center"
+        <div id="companies-section" class="row align-items-center"
             style="color: black; padding: 5% 10%; max-width: 100%; margin: 0 !important;">
             <div class="col-12 col-lg-6 col-md-6 text-left" style="padding-right: 10%;">
                 <div class="font1">For Companies</div>
@@ -88,8 +95,8 @@
         </div>
 
         <!-- FOR CANDIDATES SECTION -->
-        <div id="for-candidates" class="row align-items-center"
-            style="color: black; padding: 5% 10%; max-width: 100%; margin: 0 !important; background-color: #f8f9fa;">
+        <div id="candidates-section" class="row align-items-center"
+            style="color: black; padding: 5% 10%; max-width: 100%; margin: 0 !important; background-color: #f8f9fa; display: none;">
             <div class="col-12 col-lg-6 col-md-6 text-left" style="padding-right: 10%;">
                 <div class="font1">For Candidates</div>
                 <div class="font2">6-Month Industry-Focused Training Program <br><br></div>
@@ -472,6 +479,27 @@
 
 
     <script>
+        function showCompanies() {
+            document.getElementById('candidates-section').style.display = 'none';
+            document.getElementById('companies-section').style.display = 'flex';
+            document.querySelector('.buss-button').classList.add('filled');
+            document.querySelector('.buss-button').classList.remove('un-filled');
+            document.querySelector('.candidates-button').classList.add('un-filled');
+            document.querySelector('.candidates-button').classList.remove('filled');
+        }
+
+        function showCandidates() {
+            document.getElementById('companies-section').style.display = 'none';
+            document.getElementById('candidates-section').style.display = 'flex';
+            document.querySelector('.candidates-button').classList.add('filled');
+            document.querySelector('.candidates-button').classList.remove('un-filled');
+            document.querySelector('.buss-button').classList.add('un-filled');
+            document.querySelector('.buss-button').classList.remove('filled');
+        }
+
+        // Show companies section by default
+        showCompanies();
+
         $('.navbar-nav>li').on('click', function () {
             $('.navbar-collapse').collapse('hide');
         });
