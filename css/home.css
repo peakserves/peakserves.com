@@ -70,6 +70,36 @@ body {
   border-bottom: 1px solid white;
 }
 
+/* Ensure navigation order is maintained */
+.navbar-nav {
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: nowrap !important;
+}
+
+.navbar-nav .menu-item {
+  order: unset !important;
+  flex-shrink: 0 !important;
+}
+
+/* Specific order for navigation items */
+.navbar-nav .menu-item:nth-child(1) { order: 1 !important; } /* HOME */
+.navbar-nav .menu-item:nth-child(2) { order: 2 !important; } /* TECH SERVICES */
+.navbar-nav .menu-item:nth-child(3) { order: 3 !important; } /* FINANCE SERVICES */
+.navbar-nav .menu-item:nth-child(4) { order: 4 !important; } /* CONTACT US */
+
+/* Mobile navigation fixes */
+@media (max-width: 991.98px) {
+  .navbar-nav {
+    flex-direction: column !important;
+  }
+  
+  .navbar-nav .menu-item {
+    order: unset !important;
+    width: 100% !important;
+  }
+}
+
 nav {
   padding: 2vh 8vw !important;
 }
