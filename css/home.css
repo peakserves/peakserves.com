@@ -36,8 +36,13 @@ html {
 }
 
 .home-img {
-  width: 80%;
-
+  width: 60%;
+  border-radius: 50px;
+  opacity: 0.8;
+  filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.25)) brightness(0.9);
+  transition: all 0.3s ease;
+  object-fit: cover;
+  max-height: 300px;
 }
 
 .text-justify{
@@ -295,6 +300,19 @@ a {
 
 .tool-img {
   margin-top: 30px;
+}
+
+/* Pillar icons with white circular backgrounds */
+.pillar-item img {
+  background-color: white;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.pillar-item img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 @media (max-width: 1270px) {
