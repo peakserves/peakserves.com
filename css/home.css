@@ -315,6 +315,414 @@ a {
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
+/* Mobile Responsive Fixes */
+@media (max-width: 768px) {
+  /* Hero Section Mobile Fixes */
+  .blue-top {
+    padding: 5% 5% 0 5% !important;
+    margin-bottom: 10vh !important;
+  }
+  
+  /* Fix for headings being cut off behind navigation */
+  .head {
+    padding-top: 80px !important;
+  }
+  
+  .triangle-bg {
+    padding: 5% 5% !important;
+    margin-top: 20px !important;
+  }
+  
+  .bg-grey {
+    padding: 5% 5% !important;
+    margin-top: 20px !important;
+  }
+  
+  /* Portfolio section spacing */
+  div[style*="max-width: 100%; padding: 5% 10%"] {
+    padding-top: 80px !important;
+    margin-top: 20px !important;
+  }
+  
+  /* Testimonials section spacing */
+  .caro {
+    padding: 2% 5% !important;
+    margin-top: 20px !important;
+  }
+  
+  /* Contact section spacing */
+  #contact-us-section {
+    padding-top: 80px !important;
+    margin-top: 20px !important;
+  }
+  
+  .font1 {
+    font-size: 28px !important;
+    line-height: 1.3 !important;
+    margin-bottom: 15px !important;
+  }
+  
+  .font2 {
+    font-size: 16px !important;
+    line-height: 1.6 !important;
+    text-align: left !important;
+  }
+  
+  .home-img {
+    width: 80% !important;
+    max-height: 250px !important;
+    margin: 0 auto !important;
+    display: block !important;
+  }
+  
+  /* Get Ahead Section Mobile Fixes */
+  .triangle-bg .font1 {
+    font-size: 24px !important;
+    white-space: normal !important;
+    line-height: 1.3 !important;
+  }
+  
+  .triangle-bg .font2 {
+    font-size: 18px !important;
+    white-space: normal !important;
+    line-height: 1.4 !important;
+    margin: 15px 0 !important;
+  }
+  
+  .triangle-bg .font3 {
+    font-size: 16px !important;
+    line-height: 1.6 !important;
+    text-align: left !important;
+  }
+  
+  /* Our Pillars Section Mobile Fixes */
+  .pillar-item {
+    margin-bottom: 30px !important;
+    padding: 0 10px !important;
+  }
+  
+  .pillar-item .row {
+    margin: 0 !important;
+  }
+  
+  .pillar-item .col-3 {
+    padding: 3% !important;
+  }
+  
+  .pillar-item .col-9 {
+    padding-left: 15px !important;
+  }
+  
+  .pillar-item h5 {
+    font-size: 18px !important;
+    margin-bottom: 8px !important;
+  }
+  
+  .pillar-item p {
+    font-size: 14px !important;
+    line-height: 1.5 !important;
+    margin-bottom: 0 !important;
+  }
+  
+  /* Portfolio Section Mobile Fixes */
+  .row-1-port {
+    margin-top: 30px !important;
+  }
+  
+  .row-2-port {
+    margin-top: 15px !important;
+  }
+  
+  .portfolio-div {
+    margin: 0 5px 15px 5px !important;
+    padding: 10px !important;
+  }
+  
+  .portfolio-div .col-4 {
+    padding: 3% !important;
+  }
+  
+  .portfolio-div .col-8 {
+    padding-left: 10px !important;
+  }
+  
+  .font5 {
+    font-size: 14px !important;
+    line-height: 1.3 !important;
+  }
+  
+  /* Testimonials Mobile Fixes */
+  .caro {
+    padding: 2% 5% !important;
+  }
+  
+  .carousel-item {
+    font-size: 16px !important;
+    line-height: 1.5 !important;
+    padding: 0 10px !important;
+  }
+  
+  .carousel-item img {
+    width: 60px !important;
+    margin: 10px auto !important;
+  }
+  
+  .carousel-item span {
+    font-size: 14px !important;
+    line-height: 1.4 !important;
+  }
+  
+  /* Navigation Mobile Fixes */
+  .navbar-brand {
+    width: 50% !important;
+  }
+  
+  .nav-links {
+    background: linear-gradient(90deg, #000000 0.55%, #2B434E 59.34%, #48849E 102.23%) !important;
+    padding: 20px !important;
+    border-radius: 10px !important;
+    margin-top: 10px !important;
+  }
+  
+  .navbar-nav .menu-item {
+    margin: 10px 0 !important;
+  }
+  
+  .navbar-nav .menu-item a {
+    margin-right: 0 !important;
+    padding: 10px 0 !important;
+    text-align: center !important;
+  }
+  
+  /* Contact Section Mobile Fixes */
+  .contact-sec {
+    padding: 5% !important;
+  }
+  
+  .contact-sec .contact-ul li,
+  .contact-ul b {
+    font-size: 16px !important;
+    line-height: 1.5 !important;
+  }
+  
+  .inptFld {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: 45px !important;
+    font-size: 16px !important;
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    appearance: none !important;
+    box-sizing: border-box !important;
+    outline: none !important;
+  }
+  
+  /* Consistent textarea styling for mobile */
+  .contFrm textarea.inptFld,
+  textarea.inptFld {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: 45px !important;
+    min-height: 45px !important;
+    max-height: 45px !important;
+    border: 0 !important;
+    margin: 0 0 10px 0 !important;
+    border-radius: 8px !important;
+    padding: 0 20px !important;
+    font-size: 16px !important;
+    color: #000 !important;
+    resize: none !important;
+    overflow: hidden !important;
+    font-family: inherit !important;
+    line-height: 1.5 !important;
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    appearance: none !important;
+    box-sizing: border-box !important;
+    outline: none !important;
+  }
+  
+  /* Ensure all form inputs have uniform width */
+  .inptFld {
+    width: 100% !important;
+    box-sizing: border-box !important;
+    margin: 0 0 10px 0 !important;
+  }
+  
+  /* Form container adjustments */
+  .contFrm {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  
+  .contFrm input,
+  .contFrm textarea {
+    width: 100% !important;
+    box-sizing: border-box !important;
+    margin: 0 0 10px 0 !important;
+  }
+  
+  /* General Mobile Spacing */
+  .col-12 {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+  
+  .row {
+    margin-left: -5px !important;
+    margin-right: -5px !important;
+  }
+  
+  .col-lg-6, .col-md-6, .col-12 {
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+  }
+}
+
+@media (max-width: 576px) {
+  /* Extra Small Mobile Fixes */
+  .font1 {
+    font-size: 24px !important;
+  }
+  
+  .font2 {
+    font-size: 14px !important;
+  }
+  
+  .triangle-bg .font1 {
+    font-size: 20px !important;
+  }
+  
+  .triangle-bg .font2 {
+    font-size: 16px !important;
+  }
+  
+  .pillar-item h5 {
+    font-size: 16px !important;
+  }
+  
+  .pillar-item p {
+    font-size: 13px !important;
+  }
+  
+  .font5 {
+    font-size: 12px !important;
+  }
+  
+  .carousel-item {
+    font-size: 14px !important;
+  }
+  
+  .carousel-item span {
+    font-size: 12px !important;
+  }
+  
+  .home-img {
+    width: 90% !important;
+    max-height: 200px !important;
+  }
+  
+  /* Button Mobile Fixes */
+  .filled, .know, .un-filled {
+    font-size: 14px !important;
+    padding: 8px 16px !important;
+    width: 100% !important;
+    max-width: 250px !important;
+    margin: 10px auto !important;
+    display: block !important;
+  }
+  
+  /* Portfolio Grid Mobile Fixes */
+  .col-6 {
+    padding-left: 3px !important;
+    padding-right: 3px !important;
+  }
+  
+  .portfolio-div {
+    margin: 0 2px 10px 2px !important;
+    padding: 8px !important;
+  }
+  
+  .portfolio-div .col-4 {
+    padding: 2% !important;
+  }
+  
+  .portfolio-div .col-8 {
+    padding-left: 8px !important;
+  }
+  
+  /* Fix textarea height for extra small screens */
+  .contFrm textarea {
+    height: 40px !important;
+    padding: 0 14px !important;
+    resize: none !important;
+    min-height: 40px !important;
+    max-height: 40px !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    border: 0 !important;
+    margin: 0 0 8px 0 !important;
+    border-radius: 8px !important;
+    font-size: 14px !important;
+    color: #000 !important;
+    overflow: hidden !important;
+  }
+  
+  /* Consistent textarea styling for small mobile screens */
+  .contFrm textarea.inptFld,
+  textarea.inptFld {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: 40px !important;
+    min-height: 40px !important;
+    max-height: 40px !important;
+    border: 0 !important;
+    margin: 0 0 10px 0 !important;
+    border-radius: 8px !important;
+    padding: 0 14px !important;
+    font-size: 16px !important;
+    color: #000 !important;
+    resize: none !important;
+    overflow: hidden !important;
+    font-family: inherit !important;
+    line-height: 1.5 !important;
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    appearance: none !important;
+    box-sizing: border-box !important;
+    outline: none !important;
+  }
+  
+  /* Ensure uniform form field sizing on small screens */
+  .contFrm input,
+  .contFrm textarea {
+    width: 100% !important;
+    box-sizing: border-box !important;
+    margin: 0 0 8px 0 !important;
+  }
+  
+
+  
+  /* Specific fix for the contact form textarea */
+  .contFrm textarea.inptFld,
+  textarea.inptFld {
+    height: 45px !important;
+    padding: 0 20px !important;
+    resize: none !important;
+    min-height: 45px !important;
+    max-height: 45px !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    border: 0 !important;
+    margin: 0 0 10px 0 !important;
+    border-radius: 8px !important;
+    font-size: 16px !important;
+    color: #000 !important;
+    overflow: hidden !important;
+    display: block !important;
+  }
+}
+
 @media (max-width: 1270px) {
   .brand {
       width: 40%;
@@ -529,6 +937,7 @@ form.contFrm {
 
 .inptFld {
   width: 100%;
+  max-width: 100%;
   height: 50px;
   border: 0;
   margin: 0 0 10px;
@@ -536,6 +945,11 @@ form.contFrm {
   padding: 0 20px;
   font-size: 16px;
   color: #000;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  box-sizing: border-box;
+  outline: none;
 }
 
 .inptFld:focus {
@@ -546,6 +960,30 @@ form.contFrm {
 .contFrm textarea {
   height: 75px;
   padding-top: 5px;
+}
+
+/* Updated textarea styling to match input fields */
+.contFrm textarea.inptFld {
+  width: 100%;
+  max-width: 100%;
+  height: 50px;
+  min-height: 50px;
+  max-height: 50px;
+  border: 0;
+  margin: 0 0 10px;
+  border-radius: 8px;
+  padding: 0 20px;
+  font-size: 16px;
+  color: #000;
+  resize: none;
+  overflow: hidden;
+  font-family: inherit;
+  line-height: 1.5;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  box-sizing: border-box;
+  outline: none;
 }
 
 .inptBtn {
@@ -580,10 +1018,17 @@ form.contFrm {
   }
 
   .inptFld {
+    width: 100%;
+    max-width: 100%;
     height: 40px;
     margin: 0 0 10px;
     padding: 0 14px;
     font-size: 14px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    box-sizing: border-box;
+    outline: none;
   }
 }
 
@@ -697,4 +1142,248 @@ form.contFrm {
   right: 20px;
   background-color: #48849E;
   opacity: 100%;
+}
+
+  /* Mobile form container and field fixes */
+  .form-container {
+    max-width: 320px !important;
+    margin: 0 auto !important;
+  }
+  
+  .form-container .inptFld {
+    width: 100% !important;
+    max-width: 320px !important;
+    height: 45px !important;
+    min-height: 45px !important;
+    max-height: 45px !important;
+    border: 0 !important;
+    margin: 0 0 10px 0 !important;
+    border-radius: 8px !important;
+    padding: 0 20px !important;
+    font-size: 16px !important;
+    color: #000 !important;
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    appearance: none !important;
+    box-sizing: border-box !important;
+    outline: none !important;
+    resize: none !important;
+    overflow: hidden !important;
+  }
+  
+  .form-container textarea.inptFld {
+    width: 100% !important;
+    max-width: 320px !important;
+    height: 45px !important;
+    min-height: 45px !important;
+    max-height: 45px !important;
+    border: 0 !important;
+    margin: 0 0 10px 0 !important;
+    border-radius: 8px !important;
+    padding: 0 20px !important;
+    font-size: 16px !important;
+    color: #000 !important;
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    appearance: none !important;
+    box-sizing: border-box !important;
+    outline: none !important;
+    resize: none !important;
+    overflow: hidden !important;
+  }
+  /* Mobile form container and field fixes for small screens */
+  .form-container {
+    max-width: 320px !important;
+    margin: 0 auto !important;
+  }
+  
+  .form-container .inptFld {
+    width: 100% !important;
+    max-width: 320px !important;
+    height: 40px !important;
+    min-height: 40px !important;
+    max-height: 40px !important;
+    border: 0 !important;
+    margin: 0 0 10px 0 !important;
+    border-radius: 8px !important;
+    padding: 0 14px !important;
+    font-size: 16px !important;
+    color: #000 !important;
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    appearance: none !important;
+    box-sizing: border-box !important;
+    outline: none !important;
+    resize: none !important;
+    overflow: hidden !important;
+  }
+  
+  .form-container textarea.inptFld {
+    width: 100% !important;
+    max-width: 320px !important;
+    height: 40px !important;
+    min-height: 40px !important;
+    max-height: 40px !important;
+    border: 0 !important;
+    margin: 0 0 10px 0 !important;
+    border-radius: 8px !important;
+    padding: 0 14px !important;
+    font-size: 16px !important;
+    color: #000 !important;
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    appearance: none !important;
+    box-sizing: border-box !important;
+    outline: none !important;
+    resize: none !important;
+    overflow: hidden !important;
+  }
+
+/* Contact form mobile fixes - force exact matching */
+.contact-form {
+  max-width: 320px;
+  margin: auto;
+}
+
+.contact-form * {
+  box-sizing: border-box;
+}
+
+.contact-form .col-sm-6,
+.contact-form .col-12 {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  margin: 0 !important;
+}
+
+.contact-form input.inptFld,
+.contact-form textarea.inptFld {
+  display: block !important;
+  width: 100% !important;
+  height: 48px !important;
+  min-height: 48px !important;
+  max-height: 48px !important;
+  padding: 0 16px !important;
+  font-size: 16px !important;
+  border: 0 !important;
+  border-radius: 8px !important;
+  margin: 0 auto 10px auto !important;
+  color: #000 !important;
+  background-color: white !important;
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+  appearance: none !important;
+  box-sizing: border-box !important;
+  outline: none !important;
+}
+
+.contact-form textarea.inptFld {
+  resize: none !important;
+  overflow: hidden !important;
+  font-family: inherit !important;
+  line-height: 1.5 !important;
+}
+
+@media (max-width: 768px) {
+  /* Mobile-specific contact form fixes with fixed width fallback */
+  .contact-form {
+    max-width: 320px !important;
+    margin: 0 auto !important;
+    padding: 0 !important;
+  }
+  
+  .contact-form .col-sm-6,
+  .contact-form .col-12 {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin: 0 !important;
+  }
+  
+  .contact-form input.inptFld,
+  .contact-form textarea.inptFld {
+    display: block !important;
+    width: 288px !important; /* Fixed width: 320px container - 32px total padding */
+    height: 48px !important;
+    min-height: 48px !important;
+    max-height: 48px !important;
+    padding: 0 16px !important;
+    font-size: 16px !important;
+    border: 0 !important;
+    border-radius: 8px !important;
+    margin: 0 auto 10px auto !important; /* Center with auto margins */
+    color: #000 !important;
+    background-color: white !important;
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    appearance: none !important;
+    box-sizing: border-box !important;
+    outline: none !important;
+  }
+  
+  .contact-form textarea.inptFld {
+    resize: none !important;
+    overflow: hidden !important;
+    font-family: inherit !important;
+    line-height: 48px !important; /* Match the height for vertical centering */
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    vertical-align: middle !important;
+  }
+}
+
+@media (max-width: 576px) {
+  /* Small mobile contact form fixes */
+  .contact-form {
+    max-width: 300px !important;
+    margin: 0 auto !important;
+    padding: 0 !important;
+  }
+  
+  .contact-form .col-sm-6,
+  .contact-form .col-12 {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin: 0 !important;
+  }
+  
+  .contact-form input.inptFld,
+  .contact-form textarea.inptFld {
+    display: block !important;
+    width: 268px !important; /* Fixed width: 300px container - 32px total padding */
+    height: 44px !important;
+    min-height: 44px !important;
+    max-height: 44px !important;
+    padding: 0 16px !important;
+    font-size: 16px !important;
+    border: 0 !important;
+    border-radius: 8px !important;
+    margin: 0 auto 10px auto !important; /* Center with auto margins */
+    color: #000 !important;
+    background-color: white !important;
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    appearance: none !important;
+    box-sizing: border-box !important;
+    outline: none !important;
+  }
+  
+  .contact-form textarea.inptFld {
+    resize: none !important;
+    overflow: hidden !important;
+    font-family: inherit !important;
+    line-height: 44px !important; /* Match the height for vertical centering */
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    vertical-align: middle !important;
+  }
+}
+
+.contact-form textarea.inptFld {
+  resize: none !important;
+  overflow: hidden !important;
+  font-family: inherit !important;
+  line-height: 48px !important; /* Match the height for vertical centering */
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  vertical-align: middle !important;
 }
