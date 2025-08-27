@@ -1240,48 +1240,32 @@ form.contFrm {
   }
 
 /* Contact form mobile fixes - force exact matching */
+/* Desktop view - keep original styling */
 .contact-form {
-  max-width: 320px;
-  margin: auto;
+  /* Desktop: no max-width constraint */
 }
 
 .contact-form * {
   box-sizing: border-box;
 }
 
+/* Desktop: remove mobile-specific spacing rules */
 .contact-form .col-sm-6,
 .contact-form .col-12 {
-  padding-left: 0 !important;
-  padding-right: 0 !important;
-  margin: 0 !important;
+  /* Desktop: use original Bootstrap spacing */
 }
 
 .contact-form input.inptFld,
 .contact-form textarea.inptFld {
-  display: block !important;
-  width: 100% !important;
-  height: 48px !important;
-  min-height: 48px !important;
-  max-height: 48px !important;
-  padding: 0 16px !important;
-  font-size: 16px !important;
-  border: 0 !important;
-  border-radius: 8px !important;
-  margin: 0 auto 10px auto !important;
-  color: #000 !important;
-  background-color: white !important;
-  -webkit-appearance: none !important;
-  -moz-appearance: none !important;
-  appearance: none !important;
-  box-sizing: border-box !important;
-  outline: none !important;
+  /* Desktop: use original .inptFld styling */
 }
 
 .contact-form textarea.inptFld {
-  resize: none !important;
-  overflow: hidden !important;
-  font-family: inherit !important;
-  line-height: 1.5 !important;
+  /* Desktop: use original textarea styling */
+  line-height: 50px; /* Match the input field height for vertical centering */
+  padding-top: 0;
+  padding-bottom: 0;
+  vertical-align: middle;
 }
 
 @media (max-width: 768px) {
@@ -1376,14 +1360,4 @@ form.contFrm {
     padding-bottom: 0 !important;
     vertical-align: middle !important;
   }
-}
-
-.contact-form textarea.inptFld {
-  resize: none !important;
-  overflow: hidden !important;
-  font-family: inherit !important;
-  line-height: 48px !important; /* Match the height for vertical centering */
-  padding-top: 0 !important;
-  padding-bottom: 0 !important;
-  vertical-align: middle !important;
 }
