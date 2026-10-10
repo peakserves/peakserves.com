@@ -507,3 +507,10 @@ body.menu-open .site-header { backdrop-filter: none; -webkit-backdrop-filter: no
 @media (max-width: 720px) {
   .stage .rail { flex-direction: column; align-items: center; text-align: center; gap: 6px; font-size: 10px; }
 }
+
+/* Header wordmark next to the mark (same treatment as the footer wordmark). */
+.brand { gap: 10px; }
+.brand-word { font-size: 21px; line-height: 1; letter-spacing: .01em; color: var(--ink); white-space: nowrap; animation: rise .8s cubic-bezier(.2, .8, .2, 1) .5s both; }
+.brand-word .serif { margin-right: .16em; }
+.brand-word b { font-weight: 700; letter-spacing: .02em; }
+@media (max-width: 720px) { .brand-word { font-size: 19px; } }
