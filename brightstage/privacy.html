@@ -2,10 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="theme-color" content="#ffffff">
     <title>Privacy Policy | Brightstage by PeakServes</title>
     <meta name="description" content="Privacy Policy | Brightstage by PeakServes">
     <link rel="icon" href="../image/favicon.png" type="image/png">
+    <link rel="apple-touch-icon" href="../image/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@1,400&family=Tiro+Devanagari+Hindi&display=swap" rel="stylesheet">
@@ -13,15 +15,16 @@
     <script>document.documentElement.classList.add('js')</script>
 </head>
 <body>
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><symbol id="peak" viewBox="140 -3 143 123"><path pathLength="1" d="M201.163 16.1713C195.981 25.07 184.931 44.0517 176.609 58.3532C168.286 72.6555 161.262 84.919 160.997 85.606C160.567 86.7279 161.433 86.8337 169.46 86.6403L178.402 86.4247L183.903 76.9046C186.93 71.6685 194.111 59.3304 199.863 49.4865C205.615 39.6427 210.59 31.3099 210.921 30.9687C211.251 30.6275 214.181 34.9116 217.433 40.4888C220.684 46.0661 227.369 57.4835 232.289 65.8612C237.209 74.2389 243.829 85.6319 247.002 91.1795L252.769 101.265L202.037 101.461L151.306 101.657L147.291 108.511C145.082 112.281 143.254 115.623 143.229 115.937C143.204 116.251 173.857 116.508 211.347 116.508C257.369 116.508 279.512 116.255 279.512 115.728C279.512 115.299 278.181 112.815 276.555 110.206C274.928 107.598 269.231 97.9251 263.894 88.7096C258.557 79.4941 251.557 67.4987 248.338 62.0531C245.12 56.6076 240.3 48.3822 237.629 43.7744C234.958 39.1667 229.37 29.5704 225.212 22.4493C221.053 15.3282 216.403 7.36556 214.88 4.75475C213.356 2.1447 211.766 0.00457183 211.347 2.15095e-06C210.929 -0.00456752 206.346 7.27264 201.163 16.1713Z"/></symbol></svg>
     <header class="site-header">
         <div class="wrap bar">
-            <a class="brand" href="../index.html" aria-label="PeakServes home"><img src="../image/logo-black.png" alt="PeakServes"></a>
+            <a class="brand" href="../index.html" aria-label="PeakServes home"><svg class="mark-svg brand-mark draw" aria-hidden="true" focusable="false"><use href="#peak"/></svg></a>
             <button class="nav-toggle" aria-label="Menu" aria-expanded="false" aria-controls="site-nav"><span></span><span></span><span></span></button>
             <nav class="nav" id="site-nav">
-                <a href="../index.html">Home</a>
-                <a href="../tech-services.html">Tech Services</a>
-                <a href="../index.html#products">Products</a>
-                <a class="pill sm" href="../index.html#contact-us-section">Contact</a>
+                <a href="../index.html" style="--i:0">Home</a>
+                <a href="../tech-services.html" style="--i:1">Tech Services</a>
+                <a href="../index.html#products" style="--i:2">Products</a>
+                <a class="pill sm" href="../index.html#contact-us-section" style="--i:3">Contact</a>
             </nav>
         </div>
     </header>
@@ -114,20 +117,35 @@
     </main>
     <footer class="site-footer">
         <div class="wrap">
-            <p class="wordmark"><span class="serif">Peak</span><b>SERVES</b></p>
-            <p class="clock"><span data-clock>&nbsp;</span><span class="dot">&bull;</span>Gurugram</p>
+            <p class="wordmark fx"><span class="serif">Peak</span><b>SERVES</b></p>
+            <p class="clock fx"><span data-clock>&nbsp;</span><span class="dot">&bull;</span>Gurugram</p>
             <div class="legal">
-                <strong>PEAKSERVE GLOBAL PRIVATE LIMITED</strong><br>
-                PeakServes is a brand owned and operated by PEAKSERVE GLOBAL PRIVATE LIMITED, a private limited company incorporated in India.<br>
-                CIN: U70200DL2023PTC414058 &nbsp;&middot;&nbsp; GST: 06AANCP7612H1Z8<br>
-                Registered Office: 2639/197, Onkar Nagar, Tri Nagar, Delhi, North West Delhi, India - 110035<br>
-                Corporate Office: 9th Floor, E-901, Corona Optus, Sector-37C, Gurugram, Haryana, India - 122001<br>
-                <a href="mailto:info@peakserves.com">info@peakserves.com</a> &nbsp;&middot;&nbsp; <a href="tel:+919873945355">+91 98739 45355</a><br>
-                &copy; 2026 PEAKSERVE GLOBAL PRIVATE LIMITED. All rights reserved.
-                <div class="links"><a href="./privacy.html">Brightstage Privacy Policy</a> <a href="./terms.html">Terms of Service</a> <a href="./data-deletion.html">Data Deletion</a></div>
+                <div class="legal-grid">
+                    <div class="legal-co">
+                        <h4>Company</h4>
+                        <p><strong>PEAKSERVE GLOBAL PRIVATE LIMITED</strong></p>
+                        <p>PeakServes is a brand owned and operated by PEAKSERVE GLOBAL PRIVATE LIMITED, a private limited company incorporated in India.</p>
+                    </div>
+                    <div>
+                        <h4>Registration</h4>
+                        <p class="nowrap">CIN U70200DL2023PTC414058</p>
+                        <p class="nowrap">GST 06AANCP7612H1Z8</p>
+                    </div>
+                    <div>
+                        <h4>Registered Office</h4>
+                        <p>2639/197, Onkar Nagar,<br>Tri Nagar, Delhi,<br>North West Delhi, India - 110035</p>
+                    </div>
+                    <div>
+                        <h4>Contact</h4>
+                        <p><a href="mailto:info@peakserves.com">info@peakserves.com</a></p>
+                        <p><a href="tel:+919873945355">+91 98739 45355</a></p>
+                    </div>
+                </div>
+                <div class="legal-bottom"><span>&copy; 2026 PEAKSERVE GLOBAL PRIVATE LIMITED. All rights reserved.</span><span class="links"><a href="./privacy.html">Brightstage Privacy Policy</a><a href="./terms.html">Terms of Service</a><a href="./data-deletion.html">Data Deletion</a></span></div>
             </div>
         </div>
     </footer>
+    <a class="float-cta" href="../index.html#contact-us-section" aria-label="Contact us"><svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><span>Contact</span></a>
     <script src="../js/site.js"></script>
 </body>
 </html>

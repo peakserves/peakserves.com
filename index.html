@@ -2,10 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="theme-color" content="#ffffff">
     <title>PeakServes | Technology services and in-house products</title>
     <meta name="description" content="PeakServes (PEAKSERVE GLOBAL PRIVATE LIMITED) builds software for enterprises and its own products: Footprints, Paramatma and Brightstage.">
     <link rel="icon" href="./image/favicon.png" type="image/png">
+    <link rel="apple-touch-icon" href="./image/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@1,400&family=Tiro+Devanagari+Hindi&display=swap" rel="stylesheet">
@@ -13,37 +15,41 @@
     <script>document.documentElement.classList.add('js')</script>
 </head>
 <body>
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><symbol id="peak" viewBox="140 -3 143 123"><path pathLength="1" d="M201.163 16.1713C195.981 25.07 184.931 44.0517 176.609 58.3532C168.286 72.6555 161.262 84.919 160.997 85.606C160.567 86.7279 161.433 86.8337 169.46 86.6403L178.402 86.4247L183.903 76.9046C186.93 71.6685 194.111 59.3304 199.863 49.4865C205.615 39.6427 210.59 31.3099 210.921 30.9687C211.251 30.6275 214.181 34.9116 217.433 40.4888C220.684 46.0661 227.369 57.4835 232.289 65.8612C237.209 74.2389 243.829 85.6319 247.002 91.1795L252.769 101.265L202.037 101.461L151.306 101.657L147.291 108.511C145.082 112.281 143.254 115.623 143.229 115.937C143.204 116.251 173.857 116.508 211.347 116.508C257.369 116.508 279.512 116.255 279.512 115.728C279.512 115.299 278.181 112.815 276.555 110.206C274.928 107.598 269.231 97.9251 263.894 88.7096C258.557 79.4941 251.557 67.4987 248.338 62.0531C245.12 56.6076 240.3 48.3822 237.629 43.7744C234.958 39.1667 229.37 29.5704 225.212 22.4493C221.053 15.3282 216.403 7.36556 214.88 4.75475C213.356 2.1447 211.766 0.00457183 211.347 2.15095e-06C210.929 -0.00456752 206.346 7.27264 201.163 16.1713Z"/></symbol></svg>
     <header class="site-header">
         <div class="wrap bar">
-            <a class="brand" href="./index.html" aria-label="PeakServes home"><img src="./image/logo-black.png" alt="PeakServes"></a>
+            <a class="brand" href="./index.html" aria-label="PeakServes home"><svg class="mark-svg brand-mark draw" aria-hidden="true" focusable="false"><use href="#peak"/></svg></a>
             <button class="nav-toggle" aria-label="Menu" aria-expanded="false" aria-controls="site-nav"><span></span><span></span><span></span></button>
             <nav class="nav" id="site-nav">
-                <a href="./index.html" aria-current="page">Home</a>
-                <a href="./tech-services.html">Tech Services</a>
-                <a href="./index.html#products">Products</a>
-                <a class="pill sm" href="./index.html#contact-us-section">Contact</a>
+                <a href="./index.html" aria-current="page" style="--i:0">Home</a>
+                <a href="./tech-services.html" style="--i:1">Tech Services</a>
+                <a href="./index.html#products" style="--i:2">Products</a>
+                <a class="pill sm" href="./index.html#contact-us-section" style="--i:3">Contact</a>
             </nav>
         </div>
     </header>
     <main>
     <section class="hero">
-        <p class="eyebrow">A technology company in Gurugram, India</p>
-        <h1>We build software for enterprises, and for the world.</h1>
-        <p class="lede">Full-stack, cloud, DevOps and AI services for enterprises, and consumer products we design, build and run in-house.</p>
-        <div class="actions">
+        <svg class="mark-svg hero-mark" aria-hidden="true" focusable="false"><use href="#peak"/></svg>
+        <p class="eyebrow rise" style="--d:0">A technology company in Gurugram, India</p>
+        <h1 class="rise" style="--d:1">We build software for enterprises, and for the world.</h1>
+        <p class="lede rise" style="--d:2">Full-stack, cloud, DevOps and AI services for enterprises, and consumer products we design, build and run in-house.</p>
+        <div class="actions rise" style="--d:3">
             <a class="pill" href="./tech-services.html">Explore Tech Services <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
             <a class="pill ghost" href="#products">Our Products</a>
         </div>
+        <a class="scroll-hint rise" style="--d:4" href="#story" aria-label="Scroll down"><span></span></a>
     </section>
 
     <div class="wrap">
         <div class="stage" aria-hidden="true">
             <div class="glow g1"></div><div class="glow g2"></div><div class="glow g3"></div>
-            <div class="rail"><span>PEAKSERVE GLOBAL PVT. LTD.</span><img src="./image/favicon.png" alt=""><span>Tech services + products</span></div>
+            <svg class="mark-svg stage-mark" aria-hidden="true" focusable="false"><use href="#peak"/></svg>
+            <div class="rail"><span>PEAKSERVE GLOBAL PVT. LTD.</span><span>Tech services + products</span></div>
         </div>
     </div>
 
-    <section class="word">
+    <section class="word" id="story">
         <p class="big reveal" lang="hi">शिखर</p>
         <p class="gloss reveal">this is <span class="serif">Peak</span> in Hindi.</p>
     </section>
@@ -55,22 +61,22 @@
 
     <section class="section" id="products">
         <div class="wrap">
-            <h2 class="section-title">Our Products</h2>
-            <p class="section-sub">Designed, built and operated in-house.</p>
-            <div class="tiles">
-                <a class="tile" href="https://footprints.travel" target="_blank" rel="noopener">
-                    <div class="art footprints"><img src="./image/products/footprints.png" alt="Footprints app icon"></div>
+            <h2 class="section-title fx">Our Products</h2>
+            <p class="section-sub fx">Designed, built and operated in-house.</p>
+            <div class="tiles scroller" data-stagger>
+                <a class="tile fx" href="https://footprints.travel" target="_blank" rel="noopener">
+                    <div class="art footprints"><img src="./image/products/footprints.png" alt="Footprints app icon" loading="lazy"></div>
                     <h3>Footprints <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></h3>
                     <p>AI-powered travel planning. A mobile app for iOS and Android that helps travellers plan trips, build itineraries and discover places.</p>
                     <span class="tag">iOS &middot; Android</span>
                 </a>
-                <a class="tile" href="https://paramatma.co.in" target="_blank" rel="noopener">
-                    <div class="art paramatma"><img src="./image/products/paramatma.png" alt="Paramatma app icon"></div>
+                <a class="tile fx" href="https://paramatma.co.in" target="_blank" rel="noopener">
+                    <div class="art paramatma"><img src="./image/products/paramatma.png" alt="Paramatma app icon" loading="lazy"></div>
                     <h3>Paramatma <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></h3>
                     <p>A Naam Jap counter and digital-detox companion. Count every naam, keep a daily streak, chant with your Sangh and step away from the endless scroll.</p>
                     <span class="tag">iOS &middot; Android</span>
                 </a>
-                <a class="tile" href="./brightstage/index.html">
+                <a class="tile fx" href="./brightstage/index.html">
                     <div class="art brightstage"><span>Brightstage</span></div>
                     <h3>Brightstage <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></h3>
                     <p>Content studio and creator collaboration. Plan, publish and measure short-form content, and work with creators on briefs, uploads and reviews.</p>
@@ -82,26 +88,26 @@
 
     <section class="section">
         <div class="wrap">
-            <h2 class="section-title">Tech Services</h2>
-            <p class="section-sub">The team that ships our own apps builds custom software for your business.</p>
-            <div class="cards">
-                <div class="card"><div class="num">01</div><h3>Full-Stack Development Outsourcing</h3><p>End-to-end web and mobile application development with modern frameworks and best practices.</p></div>
-                <div class="card"><div class="num">02</div><h3>Cloud, DevOps &amp; Infrastructure Support</h3><p>Scalable cloud solutions, CI/CD pipelines, and robust infrastructure management for optimal performance.</p></div>
-                <div class="card"><div class="num">03</div><h3>AI &amp; Emerging Tech Project Delivery</h3><p>Cutting-edge AI, machine learning, and emerging technology solutions to future-proof your business.</p></div>
-                <div class="card"><div class="num">04</div><h3>Corporate Reskilling Programs</h3><p>Customized training programs to upskill your workforce in latest technologies and methodologies.</p></div>
-                <div class="card"><div class="num">05</div><h3>Dedicated Developer Hiring</h3><p>Access to pre-vetted, job-ready developers who can integrate seamlessly with your development teams.</p></div>
-                <div class="card"><div class="num">06</div><h3>Custom IT Solutions</h3><p>Tailored technology solutions designed to address your specific business challenges and objectives.</p></div>
+            <h2 class="section-title fx">Tech Services</h2>
+            <p class="section-sub fx">The team that ships our own apps builds custom software for your business.</p>
+            <div class="cards scroller" data-stagger>
+                <div class="card fx"><div class="num">01</div><h3>Full-Stack Development Outsourcing</h3><p>End-to-end web and mobile application development with modern frameworks and best practices.</p></div>
+                <div class="card fx"><div class="num">02</div><h3>Cloud, DevOps &amp; Infrastructure Support</h3><p>Scalable cloud solutions, CI/CD pipelines, and robust infrastructure management for optimal performance.</p></div>
+                <div class="card fx"><div class="num">03</div><h3>AI &amp; Emerging Tech Project Delivery</h3><p>Cutting-edge AI, machine learning, and emerging technology solutions to future-proof your business.</p></div>
+                <div class="card fx"><div class="num">04</div><h3>Corporate Reskilling Programs</h3><p>Customized training programs to upskill your workforce in latest technologies and methodologies.</p></div>
+                <div class="card fx"><div class="num">05</div><h3>Dedicated Developer Hiring</h3><p>Access to pre-vetted, job-ready developers who can integrate seamlessly with your development teams.</p></div>
+                <div class="card fx"><div class="num">06</div><h3>Custom IT Solutions</h3><p>Tailored technology solutions designed to address your specific business challenges and objectives.</p></div>
             </div>
-            <p class="center" style="margin-top:48px"><a class="pill" href="./tech-services.html">All Tech Services <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></p>
+            <p class="center more fx"><a class="pill" href="./tech-services.html">All Tech Services <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></p>
         </div>
     </section>
 
     <section class="section tight">
         <div class="wrap split">
-            <h2>Enterprise tech services + <span class="serif">in-house</span> product development</h2>
-            <div>
+            <h2 class="fx">Enterprise tech services + <span class="serif">in-house</span> product development</h2>
+            <div class="fx">
                 <p>The digital economy rewards companies that adapt quickly. PeakServes gives your teams the skills, strategies, and confidence to:</p>
-                <ul>
+                <ul class="checks">
                     <li>Accelerate digital transformation</li>
                     <li>Boost workforce productivity and efficiency</li>
                     <li>Ensure secure, scalable, and sustainable growth</li>
@@ -114,84 +120,77 @@
 
     <section class="section">
         <div class="wrap">
-            <h2 class="section-title">Our Pillars</h2>
-            <p class="section-sub">What every engagement is built on.</p>
-            <div class="cards four">
-                <div class="card"><h3>Expertise</h3><p>Decades of combined experience in building and scaling tech solutions.</p></div>
-                <div class="card"><h3>Customization</h3><p>Every program is tailored to your unique business goals.</p></div>
-                <div class="card"><h3>Innovation</h3><p>Leveraging the latest tools and methods to deliver lasting impact.</p></div>
-                <div class="card"><h3>Growth</h3><p>Enabling organizations to stay competitive and profitable in the long run.</p></div>
+            <h2 class="section-title fx">Our Pillars</h2>
+            <p class="section-sub fx">What every engagement is built on.</p>
+            <div class="cards four scroller" data-stagger>
+                <div class="card fx"><h3>Expertise</h3><p>Decades of combined experience in building and scaling tech solutions.</p></div>
+                <div class="card fx"><h3>Customization</h3><p>Every program is tailored to your unique business goals.</p></div>
+                <div class="card fx"><h3>Innovation</h3><p>Leveraging the latest tools and methods to deliver lasting impact.</p></div>
+                <div class="card fx"><h3>Growth</h3><p>Enabling organizations to stay competitive and profitable in the long run.</p></div>
             </div>
         </div>
     </section>
 
     <section class="section tight">
         <div class="wrap">
-            <h2 class="section-title">Industries we serve</h2>
-            <p class="section-sub">We serve clients across diverse technology sectors.</p>
-            <div class="chips">
-                <span class="chip">IT &amp; Software</span>
-                <span class="chip">E-commerce &amp; Retail</span>
-                <span class="chip">Hospitality &amp; Travel</span>
-                <span class="chip">Healthcare Tech</span>
-                <span class="chip">PropTech</span>
-                <span class="chip">FinTech</span>
-                <span class="chip">Sports Tech</span>
-                <span class="chip">Enterprise Solutions</span>
+            <h2 class="section-title fx">Industries we serve</h2>
+            <p class="section-sub fx">We serve clients across diverse technology sectors.</p>
+            <div class="chips" data-stagger>
+                <span class="chip fx">IT &amp; Software</span>
+                <span class="chip fx">E-commerce &amp; Retail</span>
+                <span class="chip fx">Hospitality &amp; Travel</span>
+                <span class="chip fx">Healthcare Tech</span>
+                <span class="chip fx">PropTech</span>
+                <span class="chip fx">FinTech</span>
+                <span class="chip fx">Sports Tech</span>
+                <span class="chip fx">Enterprise Solutions</span>
             </div>
         </div>
     </section>
 
     <section class="section tight">
         <div class="wrap">
-            <div class="entity">
+            <div class="entity fx">
                 <h2>About PEAKSERVE GLOBAL PRIVATE LIMITED</h2>
-                <p>PeakServes operates as a trading brand of PEAKSERVE GLOBAL PRIVATE LIMITED, a registered company in India (CIN: U70200DL2023PTC414058). We provide technology services to enterprises and develop our own products: the Footprints and Paramatma mobile apps, and Brightstage, our content and creator platform.</p>
+                <p>PeakServes operates as a trading brand of PEAKSERVE GLOBAL PRIVATE LIMITED, a registered company in India (CIN: U70200DL2023PTC414058). We provide technology services to enterprises and develop our own products: the Footprints and Paramatma mobile apps, available on the Apple App Store and Google Play, and Brightstage, our content and creator platform.</p>
             </div>
         </div>
     </section>
 
     <section class="section" id="contact-us-section">
         <div class="wrap">
-            <div class="touch">
-                <img class="mark" src="./image/favicon.png" alt="">
+            <div class="touch fx">
+                <svg class="mark-svg touch-mark" aria-hidden="true" focusable="false"><use href="#peak"/></svg>
                 <div>
                     <h2>Get in Touch</h2>
                     <p>One stop solution for digital transformation and tech innovation for modern businesses.</p>
-                    <a class="pill" href="mailto:info@peakserves.com">Contact <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+                    <a class="pill" href="mailto:info@peakserves.com">Email us <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
                 </div>
             </div>
             <div class="contact-grid">
-                <div>
-                    <div class="block">
-                        <h3>Contact</h3>
+                <div data-stagger>
+                    <div class="block fx">
+                        <h3>Contact Us</h3>
                         <p><a href="mailto:info@peakserves.com">info@peakserves.com</a></p>
                         <p><a href="tel:+919873945355">+91 98739 45355</a></p>
                     </div>
-                    <div class="block">
-                        <h3>India</h3>
+                    <div class="block fx">
+                        <h3>Registered Office</h3>
                         <p>2639/197, Onkar Nagar, Tri Nagar, Delhi, North West Delhi, India - 110035</p>
                     </div>
-                    <div class="block">
-                        <h3>UK</h3>
-                        <p>109, Borough High St, London SE1 1NL, United Kingdom</p>
-                    </div>
-                    <div class="block">
-                        <h3>USA</h3>
-                        <p>447 Broadway 4th floor, New York, NY 10013, United States</p>
-                    </div>
-                    <div class="block">
+                    <div class="block fx">
                         <h3>Follow</h3>
-                        <p><a href="https://www.linkedin.com/company/peakserves/" target="_blank" rel="noopener">LinkedIn</a> &nbsp;&middot;&nbsp;
-                        <a href="https://instagram.com/peakserves" target="_blank" rel="noopener">Instagram</a> &nbsp;&middot;&nbsp;
-                        <a href="https://www.facebook.com/profile.php?id=100092167620228" target="_blank" rel="noopener">Facebook</a> &nbsp;&middot;&nbsp;
+                        <p class="follow"><a href="https://www.linkedin.com/company/peakserves/" target="_blank" rel="noopener">LinkedIn</a>
+                        <a href="https://instagram.com/peakserves" target="_blank" rel="noopener">Instagram</a>
+                        <a href="https://www.facebook.com/profile.php?id=100092167620228" target="_blank" rel="noopener">Facebook</a>
                         <a href="https://twitter.com/peakserves" target="_blank" rel="noopener">X</a></p>
                     </div>
                 </div>
-                <form class="form" action="https://formsubmit.co/info@peakserves.com" method="POST">
-                    <input type="text" name="name" placeholder="Your name" aria-label="Your name" required>
-                    <input type="email" name="email" placeholder="Email address" aria-label="Email address" required>
-                    <input type="tel" name="phone" placeholder="Phone number" aria-label="Phone number" required>
+                <form class="form fx" action="https://formsubmit.co/info@peakserves.com" method="POST">
+                    <h3 class="full">Send us a message</h3>
+                    <input type="text" name="name" placeholder="Your name" aria-label="Your name" autocomplete="name" required>
+                    <input type="email" name="email" placeholder="Email address" aria-label="Email address" autocomplete="email" inputmode="email" required>
+                    <input type="tel" name="phone" placeholder="Phone number" aria-label="Phone number" autocomplete="tel" inputmode="tel" required>
                     <input type="text" name="sub" placeholder="Subject" aria-label="Subject" required>
                     <textarea class="full" name="message" placeholder="Your message" aria-label="Your message" required></textarea>
                     <input type="hidden" name="_captcha" value="false">
@@ -204,19 +203,35 @@
     </main>
     <footer class="site-footer">
         <div class="wrap">
-            <p class="wordmark"><span class="serif">Peak</span><b>SERVES</b></p>
-            <p class="clock"><span data-clock>&nbsp;</span><span class="dot">&bull;</span>Gurugram</p>
+            <p class="wordmark fx"><span class="serif">Peak</span><b>SERVES</b></p>
+            <p class="clock fx"><span data-clock>&nbsp;</span><span class="dot">&bull;</span>Gurugram</p>
             <div class="legal">
-                <strong>PEAKSERVE GLOBAL PRIVATE LIMITED</strong><br>
-                PeakServes is a brand owned and operated by PEAKSERVE GLOBAL PRIVATE LIMITED, a private limited company incorporated in India.<br>
-                CIN: U70200DL2023PTC414058 &nbsp;&middot;&nbsp; GST: 06AANCP7612H1Z8<br>
-                Registered Office: 2639/197, Onkar Nagar, Tri Nagar, Delhi, North West Delhi, India - 110035<br>
-                Corporate Office: 9th Floor, E-901, Corona Optus, Sector-37C, Gurugram, Haryana, India - 122001<br>
-                <a href="mailto:info@peakserves.com">info@peakserves.com</a> &nbsp;&middot;&nbsp; <a href="tel:+919873945355">+91 98739 45355</a><br>
-                &copy; 2026 PEAKSERVE GLOBAL PRIVATE LIMITED. All rights reserved.
+                <div class="legal-grid">
+                    <div class="legal-co">
+                        <h4>Company</h4>
+                        <p><strong>PEAKSERVE GLOBAL PRIVATE LIMITED</strong></p>
+                        <p>PeakServes is a brand owned and operated by PEAKSERVE GLOBAL PRIVATE LIMITED, a private limited company incorporated in India.</p>
+                    </div>
+                    <div>
+                        <h4>Registration</h4>
+                        <p class="nowrap">CIN U70200DL2023PTC414058</p>
+                        <p class="nowrap">GST 06AANCP7612H1Z8</p>
+                    </div>
+                    <div>
+                        <h4>Registered Office</h4>
+                        <p>2639/197, Onkar Nagar,<br>Tri Nagar, Delhi,<br>North West Delhi, India - 110035</p>
+                    </div>
+                    <div>
+                        <h4>Contact</h4>
+                        <p><a href="mailto:info@peakserves.com">info@peakserves.com</a></p>
+                        <p><a href="tel:+919873945355">+91 98739 45355</a></p>
+                    </div>
+                </div>
+                <div class="legal-bottom"><span>&copy; 2026 PEAKSERVE GLOBAL PRIVATE LIMITED. All rights reserved.</span></div>
             </div>
         </div>
     </footer>
+    <a class="float-cta" href="./index.html#contact-us-section" aria-label="Contact us"><svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><span>Contact</span></a>
     <script src="./js/site.js"></script>
 </body>
 </html>

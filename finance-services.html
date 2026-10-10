@@ -1,659 +1,225 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-        </script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
-        </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
-        </script>
-
-    <link rel="stylesheet" href="./css/home.css">
-    <link rel="icon" href="./image/favicon.png" type="image/gif" sizes="16x16">
-    <title>Finance Services - PeakServes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="theme-color" content="#ffffff">
+    <title>Finance Services | PeakServes</title>
+    <meta name="description" content="Bookkeeping, accounting, reporting and tax preparation for businesses and CPA firms.">
+    <link rel="icon" href="./image/favicon.png" type="image/png">
+    <link rel="apple-touch-icon" href="./image/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@1,400&family=Tiro+Devanagari+Hindi&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/site.css">
+    <script>document.documentElement.classList.add('js')</script>
 </head>
-
 <body>
-    <a target="_blank" href="https://calendly.com/capriyanshuagarwal/30min"><img id="btn-back-to-top" src="./image/schedule.png" alt="" style="width: 75px;"></a>
-    
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><symbol id="peak" viewBox="140 -3 143 123"><path pathLength="1" d="M201.163 16.1713C195.981 25.07 184.931 44.0517 176.609 58.3532C168.286 72.6555 161.262 84.919 160.997 85.606C160.567 86.7279 161.433 86.8337 169.46 86.6403L178.402 86.4247L183.903 76.9046C186.93 71.6685 194.111 59.3304 199.863 49.4865C205.615 39.6427 210.59 31.3099 210.921 30.9687C211.251 30.6275 214.181 34.9116 217.433 40.4888C220.684 46.0661 227.369 57.4835 232.289 65.8612C237.209 74.2389 243.829 85.6319 247.002 91.1795L252.769 101.265L202.037 101.461L151.306 101.657L147.291 108.511C145.082 112.281 143.254 115.623 143.229 115.937C143.204 116.251 173.857 116.508 211.347 116.508C257.369 116.508 279.512 116.255 279.512 115.728C279.512 115.299 278.181 112.815 276.555 110.206C274.928 107.598 269.231 97.9251 263.894 88.7096C258.557 79.4941 251.557 67.4987 248.338 62.0531C245.12 56.6076 240.3 48.3822 237.629 43.7744C234.958 39.1667 229.37 29.5704 225.212 22.4493C221.053 15.3282 216.403 7.36556 214.88 4.75475C213.356 2.1447 211.766 0.00457183 211.347 2.15095e-06C210.929 -0.00456752 206.346 7.27264 201.163 16.1713Z"/></symbol></svg>
+    <header class="site-header">
+        <div class="wrap bar">
+            <a class="brand" href="./index.html" aria-label="PeakServes home"><svg class="mark-svg brand-mark draw" aria-hidden="true" focusable="false"><use href="#peak"/></svg></a>
+            <button class="nav-toggle" aria-label="Menu" aria-expanded="false" aria-controls="site-nav"><span></span><span></span><span></span></button>
+            <nav class="nav" id="site-nav">
+                <a href="./index.html" style="--i:0">Home</a>
+                <a href="./tech-services.html" style="--i:1">Tech Services</a>
+                <a href="./index.html#products" style="--i:2">Products</a>
+                <a class="pill sm" href="./index.html#contact-us-section" style="--i:3">Contact</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+    <section class="hero compact">
+        <p class="eyebrow rise" style="--d:0">Finance Services</p>
+        <h1 class="rise" style="--d:1">Streamlining accounting operations for <span class="serif">CPA firms</span> and businesses</h1>
+        <p class="lede rise" style="--d:2">From bookkeeping and accounting to financial analysis and reporting, services that help businesses and CPA firms run efficiently.</p>
+        <div class="actions rise" style="--d:3"><a class="pill" href="#main-content">Explore Services <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+    </section>
 
-    <div class="head">
-        <nav class="navbar navbar-edit fixed-top nav-colored navbar-expand-lg navbar-dark" id="mynav">
-            <a href="./index.html" class="navbar-brand"><img src="./image/logo.png" class="brand" style="height: 4vh;"
-                    alt=""></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
-                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="nav-links collapse navbar-collapse drop-menu" id="navbarTogglerDemo02">
-                <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-                    <li class="menu-item">
-                        <a href="./index.html" class="nav-menu mar" style="margin-right: 8vw;">HOME</a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="./tech-services.html" class="nav-menu mar" style="margin-right: 8vw;">TECH SERVICES</a>
-                    </li>
-                    <!-- FINANCE SERVICES temporarily hidden (page retained, not removed)
-                    <li class="menu-item">
-                        <a href="./finance-services.html" class="nav-menu active-nav mar" style="margin-right: 8vw;">FINANCE SERVICES</a>
-                    </li>
-                    -->
-                    <li class="menu-item">
-                        <a href="#contact-us-section" class="nav-menu">CONTACT US</a>
-                    </li>
-                </ul>
-
-            </div>
-        </nav>
-        <div class="" style="padding-top: 5vh; padding-bottom: 5vh;">
-            <div class="row align-items-center" style="max-width: 100vw;">
-                <div class="col-12 col-lg-6 col-md-6 blue-top">
-                    <div class="font1">Streamlining Accounting Operations for CPA Firms and Businesses</h1>
-                    </div><br>
-                    <div class="font2 text-justify">From bookkeeping to accounting, financial analysis, and reporting
-                        services to
-                        help businesses and CPA firms achieve streamlined efficiency.</div>
-                    <br>
-                    <br>
-                    <a onclick="showbussiness()"><button class="buss-button filled">For
-                            Businesses</button></a>
-                    <a onclick="showcfa()"><button class="un-filled cfa-firm-button" style="margin-left: 0.5vw">For CPA
-                            Firms</button></a>
-                    <br><br>
-                </div>
-                <div class="col-md-6 col-lg-6 col-12 fix text-center" style="padding-right: 5%; padding-left: 5%; padding-bottom: 10px;">
-                    <img src="./image/about/freepik__the-style-is-candid-image-photography-with-natural__93586.png" class="home-img" alt="">
-                </div>
+    <section class="section tight">
+        <div class="wrap split">
+            <h2 class="fx">Get ahead with PeakServes: your <span class="serif">outsourcing partner</span> for success.</h2>
+            <div class="fx">
+                <p>Your trusted partner for outsourcing solutions that help you streamline your business and achieve your goals. Whether you're a CPA firm looking to improve efficiency and reduce costs, or a business owner focused on growth and expansion, we have the expertise and resources to help.</p>
+                <p>Running a business is complex and demanding. That's why we offer a comprehensive range of services designed to help you reach your objectives while minimizing your workload and maximizing your profitability. From bookkeeping and accounting to financial analysis and reporting, our team of skilled professionals is dedicated to the highest quality of service and support.</p>
+                <p class="more"><a class="pill ghost" href="./about.html">Know More <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></p>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div id="main-content">
-        <div class="row align-items-center"
-            style="color: black; padding: 5% 10%; max-width: 100%; margin: 0 !important;">
-            <div class="col-12 col-lg-6 col-md-6 text-left" style="padding-right: 10%;">
-                <div class="font1">Get ahead with PeakServes</div>
-                <div class="font2"> Your outsourcing partner for success. <br><br></div>
+    <section class="section" id="main-content">
+        <div class="wrap">
+            <div class="tabs fx" role="tablist" data-tabs>
+                <button role="tab" aria-selected="true" data-tab="business">For Businesses</button>
+                <button role="tab" aria-selected="false" data-tab="cpa">For CPA Firms</button>
+                <span class="tabs-ink" aria-hidden="true"></span>
             </div>
-            <div class="col-md-6 col-lg-6 col-12 text-left">
-                <div class="font3 text-justify">Your trusted partner for outsourcing solutions that help you streamline
-                    your business
-                    and achieve your goals. Whether you're a CPA firm looking to improve your efficiency and reduce
-                    costs, or a business owner seeking to focus on growth and expansion, we have the expertise and
-                    resources to help.<br>
-                    At PeakServes, we understand that running a business is a complex and demanding task. That's why we
-                    offer a comprehensive range of services designed to help you achieve your objectives while
-                    minimizing your workload and maximizing your profitability. From bookkeeping and accounting to
-                    financial analysis and reporting, our team of skilled professionals is dedicated to providing you
-                    with the highest quality service and support.
-                </div><br>
-                <div id="services"></div>
-                <a href="/about.html"><button class="know" style="color: white;">Know More</button></a>
+            <div class="panel" data-panel="business">
+            <h2 class="section-title fx">Our Services</h2>
+            <div class="cards scroller" data-stagger>
+                <div class="card fx"><div class="num">01</div><h3>General Accounting</h3><p>Bank reconciliations, journal entry postings, accruals and prepayments.</p></div>
+                <div class="card fx"><div class="num">02</div><h3>Accounts Payable</h3><p>Supplier set-up, purchase order processing, supplier statement reconciliation.</p></div>
+                <div class="card fx"><div class="num">03</div><h3>Accounts Receivable</h3><p>Customer set-up, revenue reconciliation, cash allocation.</p></div>
+                <div class="card fx"><div class="num">04</div><h3>Financial Reporting</h3><p>Management accounts, commentary analysis, decision and planning support.</p></div>
+                <div class="card fx"><div class="num">05</div><h3>Tax Preparation</h3><p>Dedicated year-round tax advisory support for business and individual returns.</p></div>
+                <div class="card fx"><div class="num">06</div><h3>Payroll</h3><p>Customized payroll reports; daily, weekly and monthly statutory deductions.</p></div>
             </div>
-        </div>
-    </div>
-    </div>
-
-
-    
-    <div class="bg-grey" style="max-width: 100%; padding: 5% 10%;">
-        <div class="col-12 font1 text-center">
-            <a onclick="showbussiness()"><button class="buss-button filled">For
-                    Businesses</button></a>
-            <a onclick="showcfa()"><button class="un-filled cfa-firm-button" style="margin-left: 0.5vw">For CPA
-                    Firms</button></a><br>
-
-        </div>
-
-        <div class="cfa-firm" style="display: none;">
-            <div class="col-12 font1 text-center">Partner Eligibilty</div>
-            <div class="row align-items-center text-center">
-                <div class="col-6 col-lg-4 col-md-4 height-full">
-                    <div class="font5 row-2-port partner-div">Industry Consultants</div>
-                </div>
-                <div class="col-6 col-lg-4 col-md-4 height-full">
-                    <div class="font5 row-2-port partner-div">Book-keeping Firms</div>
-                </div>
-                <div class="col-6 col-lg-4 col-md-4 height-full">
-                    <div class="font5 row-2-port partner-div">Management Consultancy Firms</div>
-                </div>
-                <div class="col-6 col-lg-4 col-md-4 height-full">
-                    <div class="font5 row-2-port partner-div">Certified Public Accountants</div>
-                </div>
-                <div class="col-6 col-lg-4 col-md-4 height-full">
-                    <div class="font5 row-2-port partner-div">Certified Finance Firms</div>
-                </div>
-                <div class="col-6 col-lg-4 col-md-4 height-full">
-                    <div class="font5 row-2-port partner-div">Part time CFOs</div>
-                </div>
-            </div><br><br>
-
-        <div class="col-12 font1 text-center">Our Models</div><br>
-        <div class="row text-center">
-            <div class="col-12 col-lg-4 col-md-6  py-3 py-sm-0">
-                <div class="card box1">
-                    <div class="card-body">
-                        <h5 class="card-title">Referral Partnership</h5>
-                        <p class="card-text">Where our trusted CPA firm seamlessly refers Peakserves for accurate and
-                            efficient services.
-                        </p>
-                    </div>
-                </div>
             </div>
-            <div class="col-12 col-lg-4 col-md-6  py-3 py-sm-0">
-                <div class="card box1">
-                    <div class="card-body">
-                        <h5 class="card-title">Back office Support</h5>
-                        <p class="card-text">Peakserves works behind the scenes, providing comprehensive support without
-                            direct client interaction.
-                        </p>
-                    </div>
-                </div>
+            <div class="panel" data-panel="cpa" hidden>
+            <h2 class="section-title fx">Partner Eligibility</h2>
+            <div class="chips" data-stagger>
+                <span class="chip fx">Industry Consultants</span>
+                <span class="chip fx">Book-keeping Firms</span>
+                <span class="chip fx">Management Consultancy Firms</span>
+                <span class="chip fx">Certified Public Accountants</span>
+                <span class="chip fx">Certified Finance Firms</span>
+                <span class="chip fx">Part-time CFOs</span>
             </div>
-            <div class="col-12 col-lg-4 col-md-6  py-3 py-sm-0">
-                <div class="card box1">
-                    <div class="card-body">
-                        <h5 class="card-title">Extended Partnership</h5>
-                        <p class="card-text">We establish transparency by making clients aware of the collaborative
-                            relationship between the CPA firm and Peakserves.
-                        </p>
-                    </div>
-                </div>
+                <div class="gap"></div>
+            <h2 class="section-title fx">Our Models</h2>
+            <div class="cards scroller" data-stagger>
+                <div class="card fx"><h3>Referral Partnership</h3><p>Your CPA firm refers PeakServes to its clients for accurate and efficient services.</p></div>
+                <div class="card fx"><h3>Back Office Support</h3><p>PeakServes works behind the scenes, providing comprehensive support without direct client interaction.</p></div>
+                <div class="card fx"><h3>Extended Partnership</h3><p>Clients know about the collaboration between your CPA firm and PeakServes, keeping the relationship transparent.</p></div>
             </div>
-
-
-        </div>
-        <br><br>
-        <div class="col-12 font1 text-center">Our Services</div><br>
-        <div class="row text-center">
-            <div class="col-12 col-lg-4 col-md-6  py-3 py-sm-0">
-                <div class="card box">
-                    <div class="text-center image-box"> <img src="./image/services/icons8-bookkeeping-100.png"
-                            class="card-img-top" alt="..."></div>
-                    <div class="card-body">
-                        <h5 class="card-title">Bookkeeping</h5>
-                        <p class="card-text">Service on the monthly, quarterly, and annual basis
-                        </p>
-                    </div>
-                </div>
+                <div class="gap"></div>
+            <h2 class="section-title fx">Our Services</h2>
+            <div class="cards scroller" data-stagger>
+                <div class="card fx"><div class="num">01</div><h3>Bookkeeping</h3><p>Monthly, quarterly and annual bookkeeping.</p></div>
+                <div class="card fx"><div class="num">02</div><h3>Review &amp; Adjustments</h3><p>Corrections in books of account, review, and posting of year-end adjustments.</p></div>
+                <div class="card fx"><div class="num">03</div><h3>Reconciliation</h3><p>Streamlining and harmonizing control account balances.</p></div>
+                <div class="card fx"><div class="num">04</div><h3>Software Conversion Support</h3><p>Assistance in converting and migrating accounting software systems.</p></div>
+                <div class="card fx"><div class="num">05</div><h3>Tax Returns Preparation</h3><p>Preparation of 1120, 1120S, 1065 and related 1040 returns.</p></div>
+                <div class="card fx"><div class="num">06</div><h3>Systemized Accounting Integration</h3><p>Seamless data management and streamlined financial processes.</p></div>
             </div>
-            <div class="col-12 col-lg-4 col-md-6  py-3 py-sm-0">
-                <div class="card box">
-                    <div class="text-center image-box"> <img src="./image/services/icons8-adjustment-100.png"
-                            class="card-img-top" alt="..."></div>
-                    <div class="card-body">
-                        <h5 class="card-title">Review & Adjustments</h5>
-                        <p class="card-text">Correction in books of account, review and posting year-end adjustment
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-lg-4 col-md-6  py-3 py-sm-0">
-                <div class="card box">
-                    <div class="text-center image-box"> <img src="./image/services/reconciliation.png"
-                            class="card-img-top" alt="..."></div>
-                    <div class="card-body">
-                        <h5 class="card-title">Reconciliation</h5>
-                        <p class="card-text">Streamlining and Harmonizing Control Account Balances.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-
-        </div>
-        <br>
-        <div class="row text-center">
-            <div class="col-12 col-lg-4 col-md-6  py-3 py-sm-0">
-                <div class="card box">
-                    <div class="text-center image-box"> <img src="./image/services/encoding.png" class="card-img-top"
-                            alt="..."></div>
-                    <div class="card-body">
-                        <h5 class="card-title">Software Conversion Support</h5>
-                        <p class="card-text">Assistance in converting and migrating accounting software systems.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-lg-4 col-md-6  py-3 py-sm-0">
-                <div class="card box">
-                    <div class="text-center image-box"> <img src="./image/services/tax.png" class="card-img-top"
-                            alt="..."></div>
-                    <div class="card-body">
-                        <h5 class="card-title">Tax Returns Preparation</h5>
-                        <p class="card-text">Tax returns preparation of 1120, the 1120S, 1065 and related 1040s.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-lg-4 col-md-6  py-3 py-sm-0">
-                <div class="card box">
-                    <div class="text-center image-box"> <img src="./image/services/user.png" class="card-img-top"
-                            alt="..."></div>
-                    <div class="card-body">
-                        <h5 class="card-title">Systemized Accounting Integration</h5>
-                        <p class="card-text">Seamless data management and streamlined financial processes.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-
-        </div>
-    </div>
-
-    <div class="bussiness">
-        <div class="col-12 font1 text-center">Our Services</div><br>
-        <div class="row text-center">
-
-            <div class="col-12 col-lg-4 col-md-6  py-3 py-sm-0">
-                <div class="card box">
-                    <div class="text-center image-box"> <img src="./image/services/office.png" class="card-img-top"
-                            alt="..."></div>
-                    <div class="card-body">
-                        <h5 class="card-title">General Accounting</h5>
-                        <p class="card-text">Bank reconciliations, Journal entry postings, Accruals and prepayments
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-lg-4 col-md-6  py-3 py-sm-0">
-                <div class="card box">
-                    <div class="text-center image-box"> <img src="./image/services/payable.png" class="card-img-top"
-                            alt="..."></div>
-                    <div class="card-body">
-                        <h5 class="card-title">Accounts Payable</h5>
-                        <p class="card-text">Supplier set-up, Purchase order processing, Supplier statement
-                            reconciliation
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-lg-4 col-md-6  py-3 py-sm-0">
-                <div class="card box">
-                    <div class="text-center image-box"> <img src="./image/services/receive.png" class="card-img-top"
-                            alt="..."></div>
-                    <div class="card-body">
-                        <h5 class="card-title">Accounts Receivable</h5>
-                        <p class="card-text">Customer set-up, Revenue Reconciliation, Cash allocation
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-
-        </div>
-        <br><br>
-        <div class="row text-center">
-            <div class="col-12 col-lg-4 col-md-6  py-3 py-sm-0">
-                <div class="card box">
-                    <div class="text-center image-box"> <img src="./image/services/report.png" class="card-img-top"
-                            alt="..."></div>
-                    <div class="card-body">
-                        <h5 class="card-title">Financial Reporting</h5>
-                        <p class="card-text">Management accounts, Commentary Analysis, Decision and planning support
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-lg-4 col-md-6  py-3 py-sm-0">
-                <div class="card box">
-                    <div class="text-center image-box"> <img src="./image/services/tax-1.png" class="card-img-top"
-                            alt="..."></div>
-                    <div class="card-body">
-                        <h5 class="card-title">Tax Preparation</h5>
-                        <p class="card-text">Dedicated year-round tax advisory support for business and individual
-                            returns
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-lg-4 col-md-6  py-3 py-sm-0">
-                <div class="card box">
-                    <div class="text-center image-box"> <img src="./image/services/salary.png" class="card-img-top"
-                            alt="..."></div>
-                    <div class="card-body">
-                        <h5 class="card-title">Payroll</h5>
-                        <p class="card-text">Customized payroll reports, Daily, weekly and Monthly statutory deductions
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-
-        </div>
-    </div>
-
-    </div>
-
-    <div class="triangle-bg" style="max-width: 100%; padding: 5% 10%; color: black;">
-        <div class="col-12 font1 text-center">Our Pillars</div><br><br>
-        <div class="row  text-center">
-            <div class="col-lg-6 col-md-6 col-12 pillar-item">
-                <div class="row align-items-center">
-                    <div class="col-3 col-lg-2 col-md-2 text-left" style="padding: 5%;"><img
-                            src="./image/Feature Icon with circle.png" style="width: 100%;" alt=""></div>
-                    <div class="col-9 col-lg-10 col-md-10 text-left">
-                        <h5 class="card-title">Strategic Planning</h5>
-                        <p class="card-text text-justify">This involves identifying the specific objectives and goals of outsourcing and aligning outsourcing initiatives with the overall business strategy. We make a strategic plan with a clear roadmap for implementation and helps in evaluating the success of outsourcing efforts.</p>
-                    </div>
-                </div>
-
-            </div>
-            <div class="col-lg-6 col-md-6 col-12 pillar-item">
-                <div class="row align-items-center">
-                    <div class="col-3 col-lg-2 col-md-2 text-left" style="padding: 5%;"><img
-                            src="./image/Feature Icon with circle-1.png" style="width: 100%;" alt=""></div>
-                    <div class="col-9 col-lg-10 col-md-10 text-left">
-                        <h5 class="card-title">Expert & Tailored Solutions</h5>
-                        <p class="card-text text-justify">Our comprehensive staff of licensed accounting and financial experts translates to a specialized skill pool, committed to providing genuine & tailored solutions for all of your accounting needs.</p>
-                    </div>
-                </div>
-
-            </div>
-            <div class="col-lg-6 col-md-6 col-12 pillar-item" style="padding-top: 4%;">
-                <div class="row align-items-center">
-                    <div class="col-3 col-lg-2 col-md-2 text-left" style="padding: 5%;"><img
-                            src="./image/Feature Icon with circle-2.png" style="width: 100%;" alt=""></div>
-                    <div class="col-9 col-lg-10 col-md-10 text-left">
-                        <h5 class="card-title">Communication and Collaboration</h5>
-                        <p class="card-text text-justify">Effective communication and collaboration are vital for successful outsourcing. We maintain open and transparent communication with the clients, establish clear expectations and performance metrics, and provide timely feedback.</p>
-                    </div>
-                </div>
-
-            </div>
-            <div class="col-lg-6 col-md-6 col-12 pillar-item" style="padding-top: 4%;">
-                <div class="row align-items-center">
-                    <div class="col-3 col-lg-2 col-md-2 text-left" style="padding: 5%;"><img
-                            src="./image/Feature Icon with circle-3.png" style="width: 100%;" alt=""></div>
-                    <div class="col-9 col-lg-10 col-md-10 text-left">
-                        <h5 class="card-title">Supplemental Services</h5>
-                        <p class="card-text text-justify">Our assistance goes well beyond the realms of bookkeeping and financial advising. We offer value-added assistance that increases both the productivity and cost-cutting capabilities of your company.</p>
-                    </div>
-                </div>
-
-            </div>
-
-
-        </div>
-        <br>
-
-
-    </div>
-
-    <div class="bg-grey" style="max-width: 100%; padding: 5% 10%;">
-        <div class="col-12 font1 text-center">Our Portfolio</div>
-        <div class="col-12 font2 text-center"> We have clients from various sectors</div><br>
-        <div class="row  text-center text-center">
-            <div class="col-lg-3 col-md-3 col-6 row-1-port">
-                <div class="row portfolio-div align-items-center">
-                    <div class="col-4 col-lg-3 col-md-3 text-left" style="padding: 5%;"><img class="portfolio-img"
-                            src="./image/portfolio/icons8-hotel-100.png" width="100%" alt=""></div>
-                    <div class="col-8 col-lg-9 col-md-9 text-left">
-                        <div class="font5">Restaurants & Hotels</div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-3 col-md-3 col-6 row-1-port">
-                <div class="row portfolio-div align-items-center">
-                    <div class="col-4 col-lg-3 col-md-3 text-left" style="padding: 5%;"><img class="portfolio-img"
-                            src="./image/portfolio/icons8-retail-100.png" width="100%" alt=""></div>
-                    <div class="col-8 col-lg-9 col-md-9 text-left">
-                        <div class="font5">Retail & Ecommerce</div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-3 col-md-3 col-6 row-1-port">
-                <div class="row portfolio-div align-items-center">
-                    <div class="col-4 col-lg-3 col-md-3 text-left" style="padding: 5%;"><img class="portfolio-img"
-                            src="./image/portfolio/icons8-sports-96.png" width="100%" alt=""></div>
-                    <div class="col-8 col-lg-9 col-md-9 text-left">
-                        <div class="font5">Sports Management</div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-3 col-md-3 col-6 row-1-port">
-                <div class="row portfolio-div align-items-center">
-                    <div class="col-4 col-lg-3 col-md-3 text-left" style="padding: 5%;"><img class="portfolio-img"
-                            src="./image/portfolio/icons8-accounting-64.png" width="100%" alt=""></div>
-                    <div class="col-8 col-lg-9 col-md-9 text-left">
-                        <div class="font5">Finance & Accounting</div>
-                    </div>
-                </div>
-            </div>
-
-
-        </div>
-        <div class="row  text-center">
-            <div class="col-lg-3 col-md-3 col-6 row-2-port">
-                <div class="row portfolio-div align-items-center">
-                    <div class="col-4 col-lg-3 col-md-3 text-left" style="padding: 5%;"><img class="portfolio-img"
-                            src="./image/portfolio/icons8-it-100.png" width="100%" alt=""></div>
-                    <div class="col-8 col-lg-9 col-md-9 text-left">
-                        <div class="font5">IT & Hi-Tech</div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-3 col-md-3 col-6 row-2-port">
-                <div class="row portfolio-div align-items-center">
-                    <div class="col-4 col-lg-3 col-md-3 text-left" style="padding: 5%;"><img class="portfolio-img"
-                            src="./image/portfolio/icons8-doctors-bag-100.png" width="100%" alt=""></div>
-                    <div class="col-8 col-lg-9 col-md-9 text-left">
-                        <div class="font5">Healthcare</div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-3 col-md-3 col-6 row-2-port">
-                <div class="row portfolio-div align-items-center">
-                    <div class="col-4 col-lg-3 col-md-3 text-left" style="padding: 5%;"><img class="portfolio-img"
-                            src="./image/portfolio/icons8-franchise-100.png" width="100%" alt=""></div>
-                    <div class="col-8 col-lg-9 col-md-9 text-left">
-                        <div class="font5">Franchise</div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-3 col-md-3 col-6 row-2-port">
-                <div class="row portfolio-div align-items-center">
-                    <div class="col-4 col-lg-3 col-md-3 text-left" style="padding: 5%;"><img class="portfolio-img"
-                            src="./image/portfolio/icons8-real-estate-100.png" width="100%" alt=""></div>
-                    <div class="col-8 col-lg-9 col-md-9 text-left">
-                        <div class="font5">Real Estate</div>
-                    </div>
-                </div>
-            </div>
-
-
-
-        </div>
-
-        <br>
-    </div>
-
-    <div style="max-width: 100%; padding: 5% 10%; color: black;">
-        <div class="col-12 font1 text-center">Tools We Use</div><br><br>
-        <div class="row  text-center">
-            <div class="col-lg-2 col-md-3 col-4 tool-img">
-                <img src="./image//tools/Frame 10.png" alt="" style="width: 100%;">
-            </div>
-            <div class="col-lg-2 col-md-3 col-4 tool-img">
-                <img src="./image//tools/Frame 11.png" alt="" style="width: 100%;">
-            </div>
-            <div class="col-lg-2 col-md-3 col-4 tool-img">
-                <img src="./image//tools/Frame 12.png" alt="" style="width: 100%;">
-            </div>
-            <div class="col-lg-2 col-md-3 col-4 tool-img">
-                <img src="./image//tools/Frame 13.png" alt="" style="width: 100%;">
-            </div>
-            <div class="col-lg-2 col-md-3 col-4 tool-img">
-                <img src="./image//tools/Frame 14.png" alt="" style="width: 100%;">
-            </div>
-            <div class="col-lg-2 col-md-3 col-4 tool-img">
-                <img src="./image//tools/Frame 15.png" alt="" style="width: 100%;">
             </div>
         </div>
-        <div class="row  text-center">
-            <div class="col-lg-2 col-md-3 col-4 tool-img">
-                <img src="./image//tools/Frame 16.png" alt="" style="width: 100%;">
-            </div>
-            <div class="col-lg-2 col-md-3 col-4 tool-img">
-                <img src="./image//tools/Frame 17.png" alt="" style="width: 100%;">
-            </div>
-            <div class="col-lg-2 col-md-3 col-4 tool-img">
-                <img src="./image//tools/Frame 18.png" alt="" style="width: 100%;">
-            </div>
-            <div class="col-lg-2 col-md-3 col-4 tool-img">
-                <img src="./image//tools/Frame 19.png" alt="" style="width: 100%;">
-            </div>
-            <div class="col-lg-2 col-md-3 col-4 tool-img">
-                <img src="./image//tools/Frame 20.png" alt="" style="width: 100%;">
-            </div>
-            <div class="col-lg-2 col-md-3 col-4 tool-img">
-                <img src="./image//tools/Frame 21.png" alt="" style="width: 100%;">
+    </section>
+
+    <section class="section">
+        <div class="wrap">
+            <h2 class="section-title fx">Our Pillars</h2>
+            <div class="cards four scroller" data-stagger>
+                <div class="card fx"><h3>Strategic Planning</h3><p>We identify the specific objectives of outsourcing, align them with your overall business strategy, and set a clear roadmap for implementation and for measuring success.</p></div>
+                <div class="card fx"><h3>Expert &amp; Tailored Solutions</h3><p>Our staff of licensed accounting and financial experts brings a specialized skill pool, committed to genuine, tailored solutions for all of your accounting needs.</p></div>
+                <div class="card fx"><h3>Communication and Collaboration</h3><p>We keep communication open and transparent, set clear expectations and performance metrics, and give timely feedback.</p></div>
+                <div class="card fx"><h3>Supplemental Services</h3><p>Our assistance goes well beyond bookkeeping and financial advice, with value-added support that raises productivity and cuts costs.</p></div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="text-center caro" id="contact-us-section" style="background-color: black;">
-        <div class="row align-items-center " style="color: white;">
-            <div class="col-12 col-md-6 col-lg-6 text-left">
-                <img src="./image/logo.png" class="brand" style="width: 50%;" alt=""><br><br>
-                <div class="sub-subs hide">One stop solution for streamlining accounting <br>operations for CPA
-                    Firms and Businesses</div>
-                <br>
-                <form action="https://formsubmit.co/info@peakserves.com" method="POST" class="contFrm">
-                    <div class="contact-form">
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <input type="text" name="name" placeholder="Your Name" class="inptFld" required />
-                            </div>
+    <section class="section tight">
+        <div class="wrap">
+            <h2 class="section-title fx">Our Portfolio</h2>
+            <p class="section-sub fx">We have clients from various sectors.</p>
+            <div class="chips" data-stagger>
+                <span class="chip fx">Restaurants &amp; Hotels</span>
+                <span class="chip fx">Retail &amp; Ecommerce</span>
+                <span class="chip fx">Sports Management</span>
+                <span class="chip fx">Finance &amp; Accounting</span>
+                <span class="chip fx">IT &amp; Hi-Tech</span>
+                <span class="chip fx">Healthcare</span>
+                <span class="chip fx">Franchise</span>
+                <span class="chip fx">Real Estate</span>
+            </div>
+        </div>
+    </section>
 
-                            <div class="col-sm-6">
-                                <input type="email" name="email" placeholder="Email Address" class="inptFld" required />
-                            </div>
+    <section class="section tight">
+        <div class="wrap">
+            <h2 class="section-title fx">Tools We Use</h2>
+            <div class="logos" data-stagger>
+                <div class="logo fx"><img src="./image/tools/Frame 10.png" alt="Accounting software" loading="lazy"></div>
+                <div class="logo fx"><img src="./image/tools/Frame 11.png" alt="Accounting software" loading="lazy"></div>
+                <div class="logo fx"><img src="./image/tools/Frame 12.png" alt="Accounting software" loading="lazy"></div>
+                <div class="logo fx"><img src="./image/tools/Frame 13.png" alt="Accounting software" loading="lazy"></div>
+                <div class="logo fx"><img src="./image/tools/Frame 14.png" alt="Accounting software" loading="lazy"></div>
+                <div class="logo fx"><img src="./image/tools/Frame 15.png" alt="Accounting software" loading="lazy"></div>
+                <div class="logo fx"><img src="./image/tools/Frame 16.png" alt="Accounting software" loading="lazy"></div>
+                <div class="logo fx"><img src="./image/tools/Frame 17.png" alt="Accounting software" loading="lazy"></div>
+                <div class="logo fx"><img src="./image/tools/Frame 18.png" alt="Accounting software" loading="lazy"></div>
+                <div class="logo fx"><img src="./image/tools/Frame 19.png" alt="Accounting software" loading="lazy"></div>
+                <div class="logo fx"><img src="./image/tools/Frame 20.png" alt="Accounting software" loading="lazy"></div>
+                <div class="logo fx"><img src="./image/tools/Frame 21.png" alt="Accounting software" loading="lazy"></div>
+            </div>
+        </div>
+    </section>
 
-                            <div class="col-sm-6">
-                                <input type="tel" name="phone" placeholder="Phone Number" class="inptFld" required />
-                            </div>
-
-                            <div class="col-sm-6">
-                                <input type="text" name="sub" placeholder="Subject" class="inptFld" required />
-                            </div>
-
-                            <div class="col-12">
-                                <textarea name="message" placeholder="Your Message..." class="inptFld" required></textarea>
-                            </div>
-                            <input type="hidden" name="_captcha" value="false">
-                            <input type="hidden" name="_next" value="http://peakserves.com/thanks.html#thanks">
-
-                            <div class="col-12">
-                                <input type="submit" name="submit" value="SUBMIT" class="filled" />
-                            </div>
-                        </div>
+    <section class="section" id="contact-us-section">
+        <div class="wrap">
+            <div class="touch fx">
+                <svg class="mark-svg touch-mark" aria-hidden="true" focusable="false"><use href="#peak"/></svg>
+                <div>
+                    <h2>Get in Touch</h2>
+                    <p>One stop solution for streamlining accounting operations for CPA firms and businesses.</p>
+                    <a class="pill" href="mailto:info@peakserves.com">Email us <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+                </div>
+            </div>
+            <div class="contact-grid">
+                <div data-stagger>
+                    <div class="block fx">
+                        <h3>Contact Us</h3>
+                        <p><a href="mailto:info@peakserves.com">info@peakserves.com</a></p>
+                        <p><a href="tel:+919873945355">+91 98739 45355</a></p>
                     </div>
+                    <div class="block fx">
+                        <h3>Registered Office</h3>
+                        <p>2639/197, Onkar Nagar, Tri Nagar, Delhi, North West Delhi, India - 110035</p>
+                    </div>
+                    <div class="block fx">
+                        <h3>Follow</h3>
+                        <p class="follow"><a href="https://www.linkedin.com/company/peakserves/" target="_blank" rel="noopener">LinkedIn</a>
+                        <a href="https://instagram.com/peakserves" target="_blank" rel="noopener">Instagram</a>
+                        <a href="https://www.facebook.com/profile.php?id=100092167620228" target="_blank" rel="noopener">Facebook</a>
+                        <a href="https://twitter.com/peakserves" target="_blank" rel="noopener">X</a></p>
+                    </div>
+                </div>
+                <form class="form fx" action="https://formsubmit.co/info@peakserves.com" method="POST">
+                    <h3 class="full">Send us a message</h3>
+                    <input type="text" name="name" placeholder="Your name" aria-label="Your name" autocomplete="name" required>
+                    <input type="email" name="email" placeholder="Email address" aria-label="Email address" autocomplete="email" inputmode="email" required>
+                    <input type="tel" name="phone" placeholder="Phone number" aria-label="Phone number" autocomplete="tel" inputmode="tel" required>
+                    <input type="text" name="sub" placeholder="Subject" aria-label="Subject" required>
+                    <textarea class="full" name="message" placeholder="Your message" aria-label="Your message" required></textarea>
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="https://peakserves.com/thanks.html">
+                    <div class="full"><button class="pill" type="submit">Send message <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></div>
                 </form>
-
-            </div>
-            <div class="col-0 col-lg-2 col-md-2"></div>
-            <div class="col-12 col-md-4 col-lg-4 text-left">
-                <div class="foot-head">
-                    Locate Us
-                </div>
-                <div class="country">
-                    India
-                </div>
-                <div class="font6">2639/197, Onkar Nagar, Tri Nagar, Delhi, North West Delhi, India - 110035</div>
-
-                <!--<div class="country">
-                    UK
-                </div>
-                <div class="font6">109, Borough High St, London SE1 1NL, United Kingdom</div>
-
-                <div class="country">
-                    USA
-                </div>
-                <div class="font6">447 Broadway 4th floor, New York, NY 10013, United States</div>-->
-                <br>
-                <div class="foot-head">
-                    Contact Us
-                </div>
-                <div class="font3">
-                    <a href="mailto:info@peakserves.com">
-                        <div class="sub-subs">info@peakserves.com</div>
-                    </a>
-                </div>
-                <div class="font3">
-                    <a target="_blank" href="tel:09873945355"><span class="sub-subs">+91 98739 45355</span></a>
-                </div><br>
-                <div class="row">
-                    <div class="col-2 "><a href="https://instagram.com/peakserves?igshid=MzRlODBiNWFlZA=="
-                            target="_blank"><img class='social' src="./image/insta.png" alt=""></a>
-                    </div>
-                    <div class="col-2 cent"><a href="https://www.linkedin.com/company/peakserves/" target="_blank"><img
-                                class='social' src="./image/linkedin1.png" alt=""></a>
-                    </div>
-                    <div class="col-2 cent"><a
-                            href="https://www.facebook.com/profile.php?id=100092167620228&mibextid=ZbWKwL"
-                            target="_blank"><img class='social' src="./image/fb.png" alt=""></a></div>
-                    <div class="col-2 text-right"><a href="https://twitter.com/peakserves?t=zbPkkEn9Qvg_MwQWeluiSw&s=08"
-                            target="_blank"><img class='social' src="./image/twitter1.png" alt=""></a>
-                    </div>
-                    <br><br>
-                </div>
-
             </div>
         </div>
-        <!-- Legal / company footer -->
-        <div class="legal-footer" style="border-top: 1px solid rgba(255,255,255,0.2); margin: 3vh 5vw 0; padding-top: 3vh; color: #cfcfcf; font-size: 0.85rem; line-height: 1.7; text-align: left;">
-            <div style="font-weight: bold; color: #fff; letter-spacing: .5px;">PEAKSERVE GLOBAL PRIVATE LIMITED</div>
-            <p style="margin: 1vh 0;">PeakServes is a brand owned and operated by PEAKSERVE GLOBAL PRIVATE LIMITED, a private limited company incorporated in India.</p>
-            <div>CIN: U70200DL2023PTC414058</div>
-            <div>Registered Office: 2639/197, Onkar Nagar, Tri Nagar, Delhi, North West Delhi, India - 110035</div>
-            <div>Corporate Office: 9th Floor, E-901, Corona Optus, Sector-37C, Gurugram, Haryana, India - 122001</div>
-            <div>GST: 06AANCP7612H1Z8</div>
-            <p style="margin: 1vh 0;">Contact: <a href="mailto:info@peakserves.com" style="color:#cfcfcf;">info@peakserves.com</a> | <a href="tel:09873945355" style="color:#cfcfcf;">+91 98739 45355</a></p>
-            <div>&copy; 2026 PEAKSERVE GLOBAL PRIVATE LIMITED. All rights reserved.</div>
+    </section>
+    </main>
+    <footer class="site-footer">
+        <div class="wrap">
+            <p class="wordmark fx"><span class="serif">Peak</span><b>SERVES</b></p>
+            <p class="clock fx"><span data-clock>&nbsp;</span><span class="dot">&bull;</span>Gurugram</p>
+            <div class="legal">
+                <div class="legal-grid">
+                    <div class="legal-co">
+                        <h4>Company</h4>
+                        <p><strong>PEAKSERVE GLOBAL PRIVATE LIMITED</strong></p>
+                        <p>PeakServes is a brand owned and operated by PEAKSERVE GLOBAL PRIVATE LIMITED, a private limited company incorporated in India.</p>
+                    </div>
+                    <div>
+                        <h4>Registration</h4>
+                        <p class="nowrap">CIN U70200DL2023PTC414058</p>
+                        <p class="nowrap">GST 06AANCP7612H1Z8</p>
+                    </div>
+                    <div>
+                        <h4>Registered Office</h4>
+                        <p>2639/197, Onkar Nagar,<br>Tri Nagar, Delhi,<br>North West Delhi, India - 110035</p>
+                    </div>
+                    <div>
+                        <h4>Contact</h4>
+                        <p><a href="mailto:info@peakserves.com">info@peakserves.com</a></p>
+                        <p><a href="tel:+919873945355">+91 98739 45355</a></p>
+                    </div>
+                </div>
+                <div class="legal-bottom"><span>&copy; 2026 PEAKSERVE GLOBAL PRIVATE LIMITED. All rights reserved.</span></div>
+            </div>
         </div>
-    </div>
-
-    <script>
-        function showbussiness() {
-            document.querySelector('.cfa-firm').style.display = 'none';
-            document.querySelector('.bussiness').style.display = 'block';
-            document.querySelector('.buss-button').classList.add('filled');
-            document.querySelector('.buss-button').classList.remove('un-filled');
-            document.querySelector('.cfa-firm-button').classList.add('un-filled');
-            document.querySelector('.cfa-firm-button').classList.remove('filled');
-        }
-
-        function showcfa() {
-            document.querySelector('.bussiness').style.display = 'none';
-            document.querySelector('.cfa-firm').style.display = 'block';
-            document.querySelector('.cfa-firm-button').classList.add('filled');
-            document.querySelector('.cfa-firm-button').classList.remove('un-filled');
-            document.querySelector('.buss-button').classList.add('un-filled');
-            document.querySelector('.buss-button').classList.remove('filled');
-        }
-
-        // Show business section by default
-        showbussiness();
-    </script>
-
-
+    </footer>
+    <a class="float-cta" href="./index.html#contact-us-section" aria-label="Contact us"><svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><span>Contact</span></a>
+    <script src="./js/site.js"></script>
 </body>
-
-</html> 
+</html>
