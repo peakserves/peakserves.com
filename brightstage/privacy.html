@@ -32,7 +32,7 @@
         <div class="subnav"><a href="./index.html">Brightstage</a><a href="./privacy.html">Privacy Policy</a><a href="./terms.html">Terms of Service</a><a href="./data-deletion.html">Data Deletion</a></div>
 
         <h1>Privacy Policy</h1>
-        <div class="meta"><strong>Effective Date:</strong> 10 October 2026</div>
+        <div class="meta"><strong>Effective Date:</strong> 10 November 2026</div>
 
         <p>This policy explains what personal data Brightstage collects, why, who it is shared with, how long it is
         kept, and how you can have it deleted. Brightstage is operated by <strong>PEAKSERVE GLOBAL PRIVATE LIMITED</strong> (trading as &ldquo;PeakServes&rdquo;), CIN U70200DL2023PTC414058, with its registered office at <strong>2639/197, Onkar Nagar, Tri Nagar, Delhi, North West Delhi, India - 110035</strong> (&ldquo;<strong>we</strong>&rdquo;,
@@ -42,8 +42,8 @@
 
         <h2>1. Who this applies to</h2>
         <ul>
-            <li><strong>Connected account holders:</strong> people who connect an Instagram professional account to
-            Brightstage (our own team and creators we work with).</li>
+            <li><strong>Connected account holders:</strong> people who connect an Instagram professional account or a
+            YouTube channel to Brightstage (our own team and creators we work with).</li>
             <li><strong>Creators:</strong> people we invite to make content for us, who receive briefs, upload videos
             and are messaged on WhatsApp.</li>
             <li><strong>People who interact with connected accounts:</strong> for example, people who comment on or
@@ -58,14 +58,33 @@
             <tr><td>Access tokens</td><td>Instagram API</td><td>To act on the account with your permission. Stored encrypted.</td></tr>
             <tr><td>Posts, captions, media and their metrics (views, reach, likes, comments, shares, saves)</td><td>Instagram API</td><td>To publish scheduled content, confirm that a post went live, and report performance</td></tr>
             <tr><td>Comments and direct messages on connected accounts, and the commenter's or sender's Instagram ID and username</td><td>Instagram API</td><td>To show them in our inbox, reply, and moderate (hide or delete) where you have allowed it</td></tr>
+            <tr><td>YouTube channel ID, channel title, and the IDs, titles, descriptions, status and statistics (views, likes, comments) of videos</td><td>YouTube API Services, when you connect a YouTube channel with Google sign-in, or from public channel data for creators we work with</td><td>To upload videos you schedule, show which channel is connected, confirm that a video went live, and report performance</td></tr>
+            <tr><td>Google OAuth tokens</td><td>Google, when you connect a YouTube channel</td><td>To upload and read videos on that channel with your permission. Stored encrypted. We request only the YouTube upload and YouTube read-only permissions, not your email or profile.</td></tr>
             <tr><td>Creator name, phone number (WhatsApp), email, and the videos, captions and notes you upload</td><td>You, through our creator portal or WhatsApp</td><td>To send briefs and reminders, receive and review your content, and record what was agreed and posted</td></tr>
             <tr><td>WhatsApp messages exchanged with us</td><td>WhatsApp Business Platform</td><td>To coordinate assignments with creators</td></tr>
             <tr><td>Payment details, if we pay you</td><td>You</td><td>To pay creators</td></tr>
             <tr><td>Technical logs (IP address, request times, errors)</td><td>Our servers</td><td>Security and troubleshooting</td></tr>
         </table>
         </div>
-        <div class="inshort">In Short: We do not sell personal data, and we do not use Instagram or WhatsApp data for
+        <div class="inshort">In Short: We do not sell personal data, and we do not use Instagram, YouTube or WhatsApp data for
         advertising.</div>
+
+        <h2>2a. YouTube API Services</h2>
+        <p>Brightstage uses YouTube API Services to upload videos to, and read video data from, YouTube channels that
+        you connect. By connecting a YouTube channel you agree to the
+        <a href="https://www.youtube.com/t/terms" target="_blank" rel="noopener">YouTube Terms of Service</a>. Google's
+        handling of your data is described in the
+        <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>.</p>
+        <ul>
+            <li>YouTube data is used only to run Brightstage for you and is shown only to your own team. It is not sold,
+            shared with third parties, or used for advertising.</li>
+            <li>Stored YouTube data (such as video statistics) is refreshed from YouTube or deleted within 30 days.</li>
+            <li>You can revoke Brightstage's access at any time by disconnecting the channel in Brightstage or from
+            your Google account's security settings at
+            <a href="https://security.google.com/settings/security/permissions" target="_blank" rel="noopener">security.google.com/settings/security/permissions</a>.
+            When access is revoked, we delete the stored tokens and the YouTube data obtained through that connection
+            within 7 days, except video IDs needed to keep our own publishing records.</li>
+        </ul>
 
         <h2>3. AI assistance</h2>
         <p>We use AI tools to draft captions and suggested replies to comments and messages. The text of a comment or
@@ -78,8 +97,9 @@
         <ul>
             <li>Meta Platforms (Instagram API, WhatsApp Business Platform), to publish, read and send on connected
             accounts.</li>
+            <li>Google (YouTube API Services), to upload and read videos on connected YouTube channels.</li>
             <li>Cloudflare (storage of media files).</li>
-            <li>Hetzner Online (application servers and database, Singapore region).</li>
+            <li>Hetzner Online (application servers and database, in Finland and Germany).</li>
             <li>Anthropic (AI drafting, as described above).</li>
         </ul>
         <p>Some of these providers process data outside India. We may disclose data if required by law.</p>
@@ -87,6 +107,8 @@
         <h2>5. How long we keep it</h2>
         <ul>
             <li>Access tokens: until you disconnect the account or revoke access.</li>
+            <li>YouTube API data: refreshed or deleted within 30 days, and deleted within 7 days after you revoke
+            access (see section 2a).</li>
             <li>Media prepared for publishing: deleted from public storage within 30 days.</li>
             <li>Comments, messages, metrics and assignment records: for as long as the account or creator relationship
             is active, then deleted within 90 days, unless we must keep them longer for legal, tax or payment
@@ -97,6 +119,11 @@
         <h2>6. Security</h2>
         <p>Tokens are encrypted at rest, creator uploads are kept in private storage, access to the admin tools is
         restricted to authorised team members, and all traffic uses HTTPS.</p>
+
+        <h2>6a. Cookies and device storage</h2>
+        <p>Brightstage does not use advertising or tracking cookies. The admin tools and creator portal store a small
+        amount of data in your browser (such as your session and interface preferences) only to make them work. Short
+        links we create record a click count, coarse device type and referring site, never your raw IP address.</p>
 
         <h2>7. Your rights</h2>
         <p>You can ask us to access, correct or delete your personal data, withdraw consent, or nominate someone to
